@@ -1,5 +1,4 @@
-import os
-
+import os, shutil
 import bibtexparser
 import re
 from wordcloud import STOPWORDS
@@ -297,6 +296,33 @@ class web_site_publications:
         #plt.show()
         #plt.savefig(f_wc, bbox_inches='tight')
 
+    def write_bibtex_files(self, target_dir):
+        # delete old bibtex files
+        for filename in os.listdir(target_dir):
+            file_path = os.path.join(target_dir, filename)
+            try:
+                if filename.endswith(".bib") and (os.path.isfile(file_path) or os.path.islink(file_path)):
+                    os.unlink(file_path)
+            except Exception as e:
+                print('Failed to delete %s. Reason: %s' % (file_path, e))
+        for y in self.all_years:
+            for e in self.by_year[y]:
+                bib_name = os.path.join(target_dir, e["ID"] + ".bib")
+                with open(bib_name, "w") as f:
+                    f.write("@" + e["ENTRYTYPE"] + "{" +  e["ID"] + ",\n")
+                    entries = []
+                    for k in ["title", "author", "editor", "booktitle", "publisher", "journal", "volume", "series",
+                              "school", "institution", "type", "chapter", "pages", "doi", "year"]:
+                        if k in e:
+                            entries.append((k, e[k]))
+                    for i in range(len(entries)):
+                        k, v = entries[i]
+                        f.write("   " + k + " = {" + v + "}")
+                        if i < len(entries) - 1:
+                            f.write(",")
+                        f.write("\n")
+                    f.write("}")
+
 
 if __name__ == '__main__':
     pub = web_site_publications()
@@ -306,17 +332,18 @@ if __name__ == '__main__':
     #
     # write publication sites
     #
-    author_sites = [('Daniel Höller', 'publicationsHoeller.md'),
-                    ('Marcel Schubert', 'publicationsSchubert.md'),
-                    ('Jonas Kück', 'publicationsKrueck.md'),
-                    ('Magnus Cunow', 'publicationsCunow.md')]
+    author_pub_sites = [('Daniel Höller', 'publicationsHoeller.md'),
+                        ('Marcel Schubert', 'publicationsSchubert.md'),
+                        ('Jonas Kück', 'publicationsKrueck.md'),
+                        ('Magnus Cunow', 'publicationsCunow.md')]
 
-    pub.write_pub_site(os.path.join(base_path, "content", "publications.md"), filter=dict(), author_sites=author_sites)
-    for author, f_name in author_sites:
+    pub.write_pub_site(os.path.join(base_path, "content", "publications.md"), filter=dict(), author_sites=author_pub_sites)
+    for author, f_name in author_pub_sites:
         filter = {'author[or]editor': author}
         abs_f_name = os.path.join(base_path, "content", f_name)
-        pub.write_pub_site(abs_f_name, filter, author_sites=author_sites)
+        pub.write_pub_site(abs_f_name, filter, author_sites=author_pub_sites)
 
+    pub.write_bibtex_files(os.path.join(base_path, "static/bibtex"))
     #
     # write word clouds
     #
