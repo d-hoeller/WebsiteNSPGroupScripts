@@ -1,0 +1,1083 @@
+@inproceedings{SchubertRIPL26,
+  author      = {Marcel Schubert and Daniel H{\"{o}}ller},
+  title       = {Safety Verification of Additive Tree Ensemble Policies via Symbolic Search},
+  booktitle   = {Proceedings of the ICAPS Workshop on Reliability In Planning and Learning (RIPL)},
+  year        = {2026},
+  confacronym = {RIPL},
+  pdflocal    = {SchubertRIPL26.pdf},
+  keywords    = {2026,workshop,reviewed,ack}
+}
+
+@inproceedings{CunowPRL26,
+  author      = {Magnus Cunow and Nicola J. M{\"{u}}ller and Timo P. Gros and Gregor Behnke and Daniel H{\"{o}}ller},
+  title       = {An Admissible Neuro-Symbolic Landmark Cut Heuristic -- Preliminary Results},
+  booktitle   = {Proceedings of the ICAPS Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL)},
+  year        = {2026},
+  confacronym = {PRL},
+  pdflocal    = {CunowPRL26.pdf},
+  keywords    = {2026,workshop,reviewed,ack}
+}
+
+@inproceedings{HoellerAAAI26,
+  author       = {Daniel H{\"{o}}ller},
+  title        = {Learning Heuristic Functions for HTN Planning},
+  booktitle    = {Proceedings of the 40th AAAI Conference on Artificial Intelligence ({AAAI})},
+  publisher    = {{AAAI} Press},
+  year         = {2026},
+  confacronym  = {AAAI},
+  pages        = {36262--36270},
+  Xpdflink      = {https://doi.org/10.1609/aaai.v40i43.40945},
+  pdflocal     = {HoellerAAAI26.pdf},
+  abstract     = {In recent years, ML-based heuristic functions for automated planning have shown increasing performance. A main challenge is the level of generalization required in planning: techniques must generalize at least across different instances of the same domain (which results in different sizes of learning input). A common approach to overcome the issue is to use graph representations as input. While GNNs are a naturalchoice for learning, other methods have recently been favored because they show better runtime performance and need less training data. However, existing work has so far been limited to non-hierarchical planning. We describe the first approach to learn heuristics for hierarchical planning. We extend the Instance Learning Graph – a graph structure used in non-hierarchical planning – to the new setting and show how to learn heuristic functions based on it. Since our heuristics are applicable to the lifted model, there is no need to ground it. We therefore combine it with a novel lifted HTN planning system. Like recent systems in non-hierarchical planning, it grounds the search space explored so far, but not the entire model prior to search. Our evaluation shows that our approach is competitive with the lifted systems from the literature, though the ground systems achieve higher coverage.},
+  keywords     = {2026,conference}
+}
+
+@inproceedings{HoellerPRL25,
+  author      = {Daniel H{\"{o}}ller},
+  title       = {Learning Heuristic Functions for HTN Planning},
+  booktitle   = {Proceedings of the ICAPS Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL)},
+  year        = {2025},
+  confacronym = {PRL},
+  pdflocal    = {HoellerPRL25.pdf},
+  keywords    = {2025,workshop,reviewed}
+}
+
+@inproceedings{LauerICAPS25,
+  author      = {Pascal Lauer and {\'{A}}lvaro Torralba and Daniel H{\"{o}}ller and J{\"{o}}rg Hoffmann},
+  title       = {Continuing the Quest for Polynomial Time Heuristics in PDDL Input Size: Tractable Cases for Lifted $h^Add$},
+  booktitle   = {Proceedings of the 35th International Conference on Automated Planning and Scheduling ({ICAPS})},
+  confacronym = {ICAPS},
+  pages       = {74--83},
+  year        = {2025},
+  pdflink     = {https://doi.org/10.1609/icaps.v35i1.36103},
+  abstract    = { Recent interest in solving planning tasks, where full grounding is infeasible, has highlighted the need to compute heuristics at a lifted level. We turn our attention to the evaluation of the hAdd heuristic, which is an important cornerstone in many classical planning approaches, including the best performing lifted planning approach. We show that hAdd’s grounded efficiency does not extend to lifted tasks, where the computation is EXPTIME-complete. This prompts to identify tractability islands matching practical use cases. We identify two, where a lifted computation is feasible while grounding may fail: The first constraints to acyclic action schemata and bounds predicate arity. For the second case we introduce a novel computation, operating without grounding. Assuming the extraction encounters only acyclic conditions, and hAdd values per subgoal are bounded, it remains tractable. (Even with unbounded predicate and action arity.) In an empirical evaluation of the new technique, we observe complementary behavior to the existing lifted forward hAdd evaluation. Combining both sets a new state-of-the-art in pure-heuristic performance on the hard-to-ground benchmarks.},
+  keywords    = {2025,conference}
+}
+
+@Inbook {GrosPoV24,
+   title = {Safe Reinforcement Learning Through Regret and State Restorations in Evaluation Stages},
+   year = {2024},
+   pages = {18--38},
+   publisher = {Springer},
+   Xseries = {Cognitive Technologies},
+   Xchapter = {5},
+   booktitle = {Principles of Verification: Cycling the Probabilistic Landscape},
+  confacronym = {PrinOfVer},
+   author = {Timo P. Gros and Nicola J. M{\"{u}}ller and Daniel H{\"{o}}ller and Verena Wolf},
+   abstract = {Deep reinforcement learning (DRL) has succeeded tremendously in many complex decision-making tasks. However, for many real-world applications standard DRL training results in agents with brittle performance because, in particular for safety-critical problems, the discovery of both, safe and successful strategies is very challenging. Various exploration strategies have been proposed to address this problem. However, they do not take information about the current safety performance into account; thus, they fail to systematically focus on the parts of the state space most relevant for training. Here, we propose r egret a nd state r estoration in e valuation-based deep reinforcement learning (RARE), a framework that introduces two innovations: (i) it combines safety evaluation stages with state restorations, i.e., restarting episodes in formerly visited states, and (ii) it exploits estimations of the regret, i.e., the gap between the policies’ current and optimal performance. We show that both innovations are beneficial and that RARE outperforms baselines such as deep Q-learning and Go-Explore in an empirical evaluation.},
+   keywords = {2024,bookchapter,myother}
+}
+
+@inproceedings{MandiECAI24,
+  author    = {Jayanta Mandi and Marco Foschini and Daniel H{\"{o}}ller and Sylvie Thi{\'{e}}baux and J{\"{o}}rg Hoffmann and Tias Guns},
+  title     = {Decision-Focused Learning to Predict Action Costs for Planning},
+  booktitle = {Proceedings of the 27th European Conference on Artificial Intelligence (ECAI)},
+  pages     = {4060--4067},
+  publisher = {{IOS} Press},
+  confacronym = {ECAI},
+  year      = {2024},
+  pdflink   = {https://doi.org/10.3233/FAIA240975},
+  abstract  = { In many automated planning applications, action costs can be hard to specify. An example is the time needed to travel through a certain road segment, which depends on many factors, such as the current weather conditions. A natural way to address this issue is to learn to predict these parameters based on input features (e.g., weather forecasts) and use the predicted action costs in automated planning afterward. Decision-Focused Learning (DFL) has been successful in learning to predict the parameters of combinatorial optimization problems in a way that optimizes solution quality rather than prediction quality. This approach yields better results than treating prediction and optimization as separate tasks. In this paper, we investigate for the first time the challenges of implementing DFL for automated planning in order to learn to predict the action costs. There are two main challenges to overcome: (1) planning systems are called during gradient descent learning, to solve planning problems with negative action costs, which are not supported in planning. We propose novel methods for gradient computation to avoid this issue. (2) DFL requires repeated planner calls during training, which can limit the scalability of the method. We experiment with different methods approximating the optimal plan as well as an easy-to-implement caching mechanism to speed up the learning process. As the first work that addresses DFL for automated planning, we demonstrate that the proposed gradient computation consistently yields significantly better plans than predictions aimed at minimizing prediction error; and that caching can temper the computation requirements.},
+  keywords  = {2024,conference}
+}
+
+
+@article{HoellerJAIR24,
+  author    = {Daniel H{\"{o}}ller},
+  title     = {The TOAD System for Totally Ordered HTN Planning},
+  journal   = {Journal of Artificial Intelligence Research (JAIR)},
+  confacronym = {JAIR},
+  volume    = {80},
+  pages     = {613--663},
+  year      = {2024},
+  abstract  = {We present an approach for translating Totally Ordered Hierarchical Task Network (HTN) planning problems to classical planning problems. While this enables the use of sophisticated classical planning systems to find solutions, we need to overcome the differences in expressiveness of these two planning formalisms. Prior work on this topic did this by translating bounded HTN problems. In contrast, we approximate them, i.e., we change the problem such that every action sequence that is a solution to the HTN problem is also a solution for the classical problem, but the latter might have more solutions. To obtain a sound overall approach, we verify solutions returned by the classical planning system to ensure that they are also solutions to the HTN problem. For translation and approximation, we use techniques introduced to approximate Context-Free Languages by using Finite Automata. We named our system Toad (Totally Ordered HTN Approximation using DFA). For a subset of HTN problems the translation is even possible without approximation. Whether or not it is necessary is decided based on the property of self-embedding, which comes also from the field of formal languages. We investigate the theoretical connection of self-embedding and tail-recursiveness, a property from the HTN literature used to identify a subclass of HTN planning problems that can be translated to classical planning, and show that it is more general. To guide the classical planner, we introduce a novel heuristic tailored towards our models. We evaluate Toad on the benchmark set of the 2020 International Planning Competition. Our evaluation shows that (1) most problems can be translated without approximation and that (2) Toad is competitive with the state of the art in HTN planning.},
+  pdflink   = {https://jair.org/index.php/jair/article/view/14945},
+  keywords  = {2024,article}
+}
+
+@inproceedings{GrosRDDPS24,
+  author    = {Timo P. Gros and Nicola J. M{\"{u}}ller and Daniel H{\"{o}}ller and Verena Wolf},
+  title     = {Safe Reinforcement Learning Through Regret and State Restorations in Evaluation Stages},
+  booktitle = {Proceedings of the ICAPS workshop on Reliable Data-Driven Planning and Scheduling (RDDPS)},
+  confacronym = {RDDPS},
+  year      = {2024},
+  keywords  = {2024,workshop,reviewed}
+}
+
+@inproceedings{SchubertHSDIP24,
+  author    = {Marcel Schubert and Julia Wichlacz and Daniel H{\"{o}}ller},
+  title     = {Reasonable Landmark Orderings for Lifted Classical Planning},
+  booktitle = {Proceedings of the ICAPS workshop on Heuristics and Search for Domain-Independent Planning (HSDIP)},
+  confacronym = {HSDIP},
+  year      = {2024},
+  pdflocal  = {SchuberHSDIP24.pdf},
+  keywords  = {2024,workshop,reviewed}
+}
+
+@inproceedings{LauerHSDIP24,
+  author    = {Pascal Lauer and {\'{A}}lvaro Torralba and Daniel H{\"{o}}ller and J{\"{o}}rg Hoffmann},
+  title     = {A Lifted Backward Computation of $h^Add$},
+  booktitle = {Proceedings of the ICAPS workshop on Heuristics and Search for Domain-Independent Planning (HSDIP)},
+  confacronym = {HSDIP},
+  year      = {2024},
+  keywords  = {2024,workshop,reviewed}
+}
+
+@inproceedings{SongtuanSoCS24,
+  author    = {Songtuan Lin and Daniel H{\"{o}}ller and Pascal Bercher},
+  title     = {Modeling Assistance for Hierarchical Planning: An Approach for Correcting Hierarchical Domains with Missing Actions},
+  booktitle = {Proceedings of the 14th International Symposium on Combinatorial Search ({SoCS})},
+  confacronym = {SoCS},
+  award     = {Best Student Paper Award},
+  publisher = {{AAAI} Press},
+  year      = {2024},
+  pdflink   = {https://doi.org/10.1609/socs.v17i1.31542},
+  pages        = {55--63},
+  abstract  = {The complexity of modeling planning domains is a major obstacle for making automated planning techniques more accessible, raising the demand of tools for providing modeling assistance. In particular, tools that can automatically correct errors in a planning domain are of great importance. Previous works have devoted efforts to developing such approaches for correcting classical (non-hierarchical) domains. However, no approaches exist for hierarchical planning, which is what we offer here. More specifically, our approach takes as input a flawed hierarchical domain together with a plan known to be a solution but actually contradicting the domain (due to errors in the domain) and outputs corrections to the domain that add missing actions to the domain which turn the plan into a solution. The approach achieves this by compiling the problem of finding corrections to another hierarchical planning problem.},
+  keywords  = {2024,conference}
+}
+
+@Inproceedings {EisenhutICAPS24,
+   title     = {New Fuzzing Biases for Action Policy Testing},
+   year      = {2024},
+   publisher = {AAAI Press},
+   booktitle = {Proceedings of the 34th International Conference on Automated Planning and Scheduling ({ICAPS})},
+  confacronym = {ICAPS},
+   author    = {Jan Eisenhut and Xandra Schuler and Daniel Fi{\v{s}}er and Daniel H{\"{o}}ller and Maria Christakis and J{\"{o}}rg Hoffmann},
+   pages     = {162--167},
+   pdflink   = {https://doi.org/10.1609/icaps.v34i1.31472},
+   abstract  = {Testing was recently proposed as a method to gain trust in learned action policies in classical planning. Test cases in this setting are states generated by a fuzzing process that performs random walks from the initial state. A fuzzing bias attempts to bias these random walks towards policy bugs, that is, states where the policy performs sub-optimally. Prior work explored a simple fuzzing bias based on policy-trace cost. Here, we investigate this topic more deeply. We introduce three new fuzzing biases based on analyses of policy-trace shape, estimating whether a trace is close to looping back on itself, whether it contains detours, and whether its goal-distance surface does not smoothly decline. Our experiments with two kinds of neural action policies show that these new biases improve bug-finding capabilities in many cases.},
+   keywords  = {2024,conference}
+}
+
+@Inproceedings {SteinmetzICAPS24,
+   title     = {Explaining the Space of SSP Policies via Policy-Property Dependencies: Complexity, Algorithms, and Relation to Multi-Objective Planning},
+   year      = {2024},
+   publisher = {AAAI Press},
+   booktitle = {Proceedings of the 34th International Conference on Automated Planning and Scheduling ({ICAPS})},
+   confacronym = {ICAPS},
+   author    = {Marcel Steinmetz and Sylvie Thi{\'{e}}baux and Daniel H{\"{o}}ller and Florent Teichteil-K{\"{o}}nigsbuch},
+   pages     = {555--564},
+   pdflink   = {https://doi.org/10.1609/icaps.v34i1.31517},
+   abstract  = { Stochastic shortest path (SSP) problems are a common framework for planning under uncertainty. However, the reactive structure of their solution policies is typically not easily comprehensible by an end-user, nor do planners justify the reasons behind their choice of a particular policy over others. To strengthen confidence in the planner's decision-making, recent work in classical planning has introduced a framework for explaining to the user the possible solution space in terms of necessary trade-offs between user-provided plan properties. Here, we extend this framework to SSPs. We introduce a notion of policy properties taking into account action-outcome uncertainty. We analyze formally the computational problem of identifying the exclusion relationships between policy properties, showing that this problem is in fact harder than SSP planning in a complexity theoretical sense. We show that all the relationships can be identified through a series of heuristic searches, which, if ordered in a clever way, yields an anytime algorithm. Further, we introduce an alternative method, which leverages a connection to multi-objective probabilistic planning to move all the computational burden to a preprocessing step. Finally, we explore empirically the feasibility of the proposed explanation methodology on a range of adapted IPPC benchmarks. },
+   keywords  = {2024,conference}
+}
+
+@inproceedings{HoellerIPC23A,
+  author    = {Daniel H{\"{o}}ller},
+  title     = {The TOAD System for Totally Ordered HTN Planning in the 2023 IPC},
+  booktitle = {Proceedings of the International Planning Competition (IPC) -- Planner Description Papers},
+  year      = {2023},
+  confacronym = {IPC},
+  abstract  = {},
+  pdflocal  = {HoellerIPC23A.pdf},
+  keywords  = {2023,workshop,other}
+}
+
+@inproceedings{HoellerIPC23B,
+  author    = {Daniel H{\"{o}}ller},
+  title     = {The PANDA $\lambda$ System for HTN Planning in the 2023 IPC},
+  booktitle = {Proceedings of the International Planning Competition (IPC) -- Planner Description Papers},
+  confacronym = {IPC},
+  year      = {2023},
+  abstract  = {},
+  pdflocal  = {HoellerIPC23B.pdf},
+  keywords  = {2023,workshop,other}
+}
+
+@inproceedings{HoellerIPC23C,
+  author    = {Daniel H{\"{o}}ller},
+  title     = {The PANDA Progression System for HTN Planning in the 2023 IPC},
+  booktitle = {Proceedings of the International Planning Competition (IPC) -- Planner Description Papers},
+  confacronym = {IPC},
+  year      = {2023},
+  abstract  = {},
+  pdflocal  = {HoellerIPC23C.pdf},
+  keywords  = {2023,workshop,other}
+}
+
+@inproceedings{OlzIPC23,
+  author    = {Conny Olz and Daniel H{\"{o}}ller and Pascal Bercher},
+  title     = {The {PandaDealer} System for Totally Ordered {HTN} Planning in the 2023 IPC},
+  booktitle = {Proceedings of the International Planning Competition (IPC) -- Planner Description Papers},
+  confacronym = {IPC},
+  year      = {2023},
+  abstract  = {},
+  pdflocal  = {OlzIPC23.pdf},
+  keywords  = {2023,workshop,other}
+}
+
+@inproceedings{SchulerRDDPS23,
+  author    = {Xandra Schuler and Jan Eisenhut and Daniel H{\"{o}}ller and Daniel Fi{\v{s}}er and J{\"{o}}rg Hoffmann},
+  title     = {Action Policy Testing with Heuristic-Based Bias Functions},
+  booktitle = {Proceedings of the 2nd ICAPS Workshop on Reliable Data-Driven Planning and Scheduling (RDDPS)},
+  confacronym = {RDDPS},
+  year      = {2023},
+  keywords  = {2023,workshop,reviewed}
+}
+
+
+@inproceedings{WichlaczECAI23,
+  author    = {Julia Wichlacz and Daniel H{\"{o}}ller and Daniel Fi{\v{s}}er and J{\"{o}}rg Hoffmann},
+  title     = {A Landmark-Cut Heuristic for Lifted Optimal Planning},
+  booktitle = {Proceedings of the 26th European Conference on Artificial Intelligence (ECAI)},
+  confacronym = {ECAI},
+  year      = {2023},
+  pages     = {2623--2630},
+  publisher = {{IOS} Press},
+  keywords  = {2023,conference}
+}
+
+
+@article{GrosACM23,
+  author    = {Timo P. Gros and Joschka Groß and Daniel H{\"{o}}ller and J{\"{o}}rg Hoffmann and Michaela Klauck and Hendrik Meerkamp and Nicola J. M{\"{u}}ller and Lukas Schaller and Verena Wolf},
+  title     = {{DSMC} Evaluation Stages: Fostering Robust and Safe Behavior in Deep Reinforcement Learning -- Extended Version},
+  journal   = {ACM Transactions on Modeling and Computer Simulation},
+  confacronym = {ACM},
+  publisher = {Association for Computing Machinery},
+  Xvolume    = {42},
+  Xnumber    = {1},
+  Xpages     = {83--85},
+  year      = {2023},
+  Xdoi = {10.1145/3607198},
+  keywords  = {2023,article}
+}
+
+@phdthesis{HoellerDiss23,
+  author  = {Daniel H{\"{o}}ller},
+  title   = {Hierarchical Planning -- Expressivity Analysis, Solving Techniques, and Problem Compilations},
+  school  = {Ulm University},
+  year    = {2023},
+  typeX    = {Dr.\ rer.\ nat.},
+  Xmonth   = {July},
+  pdflink  = {http://dx.doi.org/10.18725/OPARU-47463},
+  note    = {Supervisor: Susanne Biundo, external examiners: Bernhard Nebel and Stefan Edelkamp},
+  award   = {ICAPS Best Dissertation Award 2024},
+  keywords  = {2023,other,phdthesis}
+}
+
+
+
+@inproceedings{HoellerIPC21,
+  author    = {Daniel H{\"{o}}ller and Songtuan Lin and Kutluhan Erol and Pascal Bercher},
+  title     = {From {PCP} to {HTN} Planning Through {CFGs}},
+  booktitle = {Proceedings of the 10th International Planning Competition -- Planner and Domains Abstracts (IPC)},
+  confacronym = {IPC},
+  year      = {2021},
+  abstract  = {The International Planning Competition in 2020 was the ﬁrst one for a long time to host tracks on HTN planning. The used benchmark set included a domain describing the undecidable Post Correspondence Problem (PCP). In this paper we describe the two-step process applied to generate HTN problems based on PCP instances. It translates the PCP into a grammar intersection problem of two context-free languages, which is then encoded into an HTN problem.},
+  keywords  = {2021,workshop,other}
+}
+
+@inproceedings{HoellerHPlan21,
+  author    = {Daniel H{\"{o}}ller and Julia Wichlacz and Pascal Bercher and Gregor Behnke},
+  title     = {Compiling {HTN} Plan Verification Problems into HTN Planning Problems},
+  booktitle = {Proceedings of the 4th ICAPS Workshop on Hierarchical Planning (HPlan)},
+  confacronym = {HPlan},
+  year      = {2021},
+  abstract  = {Plan Verification is the task of deciding whether a sequence of actions is a solution for a given planning problem. In HTN planning, the task is computationally expensive and may be up to NP-hard. However, there are situations where it needs to be solved, e.g. when a solution is post-processed, in systems using approximation, or just to validate whether a planning system works correctly (e.g. for debugging or in a competition). In the literature, there are verification systems based on translations to propositional logic and based on techniques from parsing. Here we present a third approach and translate HTN plan verification problems into HTN planning problems. These can be solved using any HTN planning system. We test our solver on the set of solutions from the 2020 International Planning Competition. Our evaluation is yet preliminary, because it does not include all systems from the literature, but it already shows that our approach performs well compared with the included systems.},
+  keywords  = {2021,workshop,reviewed}
+}
+
+@inproceedings{LauerHSDIP21,
+  author    = {Pascal Lauer and {\'{A}}lvaro Torralba and Daniel Fi{\v{s}}er and Daniel H{\"{o}}ller and Julia Wichlacz and J{\"{o}}rg Hoffmann},
+  title     = {Polynomial-Time in {PDDL} Input Size: Making the Delete Relaxation Feasible for Lifted Planning},
+  booktitle = {Proceedings of the ICAPS Workshop on Heuristics and Search for Domain-Independent Planning (HSDIP)},
+  confacronym = {HSDIP},
+  year      = {2021},
+  abstract  = {},
+  keywords  = {2021,workshop,reviewed}
+}
+
+@inproceedings{SteinmetzPRL21,
+  author    = {Marcel Steinmetz and Timo P. Gros and Philippe Heim and Daniel H{\"{o}}ller and J{\"{o}}rg Hoffmann},
+  title     = {Debugging a Policy: A Framework for Automatic Action Policy Testing},
+  booktitle = {Proceedings of the ICAPS Workshop on Bridging the Gap Between AI Planning and Reinforcement Learning (PRL)},
+  confacronym = {PRL},
+  year      = {2021},
+  abstract  = {Neural network (NN) action policies are an attractive option for real-time action decisions in dynamic environments. Yet this requires a high degree of trust in the NN. How to gain such trust? Systematic testing certainly is one possible answer, in analogy to program testing. The input to the program becomes the start state for the policy; and erroneous program behaviors -- "bugs" -- become bad policy behavior, e.g. not reaching the goal from a solvable state. We introduce a framework spelling out this concept. The framework is generic and in principle applicable to arbitrary planning models. We discuss how this form of testing can be operationalized, i.e., how to confirm a bug has been found, and how potential bugs might be identified in the first place. This essentially involves seeing standard planning concepts through the new lense of policy testing. The implementation and practical exploration of this framework remains open for future work. We believe that action policy testing is an important topic for ICAPS, and we hope that our framework will serve to start its discussion.},
+  keywords  = {2021,workshop,reviewed}
+}
+
+@inproceedings{HoellerHPlan20A,
+  author    = {Daniel H{\"{o}}ller and Pascal Bercher},
+  title     = {Landmark Extraction in HTN Planning},
+  booktitle = {Proceedings of the 3rd ICAPS Workshop on Hierarchical Planning (HPlan)},
+  confacronym = {HPlan},
+  year      = {2020},
+  abstract  = {Landmarks are state features that need to be made true or tasks that need to be contained in every solution of a planning problem. They are a valuable source of information in planning and can be exploited in various ways. Landmarks have been used both in classical and hierarchical planning, but while there is much work in classical planning, the techniques in hierarchical planning are less evolved. In this paper we introduce a novel landmark generation method for Hierarchical Task Network (HTN) planning and show that it is sound and incomplete. We show that every complete approach is as hard as the underlying HTN problem. Since we make relaxations during landmark generation, this means NP-hard for our setting (while our approach is in P). On a widely used benchmark set, our approach finds more than twice the number of landmarks than the approach from the literature. Though our focus is on landmark generation, we show that the newly discovered landmarks bear information beneficial for solvers.},
+  keywords  = {2020,workshop,reviewed}
+}
+
+@inproceedings{HoellerHPlan20B,
+  author    = {Daniel H{\"{o}}ller and Pascal Bercher and Gregor Behnke},
+  title     = {Delete- and Ordering-Relaxation Heuristics for HTN Planning},
+  booktitle = {Proceedings of the 3rd ICAPS Workshop on Hierarchical Planning (HPlan)},
+  confacronym = {HPlan},
+  year      = {2020},
+  abstract  = {In HTN planning, the hierarchy has a wide impact on solutions. First, there is (usually) no state-based goal given, the objective is given via the hierarchy. Second, it enforces actions to be in a plan. Third, planners are not allowed to add actions apart from those introduced via decomposition, i.e. via the hierarchy. However, no heuristic considers the interplay of hierarchy and actions in the plan exactly (without relaxation) because this makes heuristic calculation NP-hard even under delete relaxation. We introduce the problem class of delete- and ordering-free HTN planning as basis for novel HTN heuristics and show that its plan existence problem is still NP-complete. We then introduce heuristics based on the new class using an integer programming model to solve it.},
+  keywords  = {2020,workshop,reviewed}
+}
+
+@inproceedings{WichlaczHPlan20,
+  author    = {Julia Wichlacz and Daniel H{\"{o}}ller and {\'{A}}lvaro Torralba and J{\"{o}}rg Hoffmann},
+  title     = {Applying Monte-Carlo Tree Search in HTN Planning},
+  booktitle = {Proceedings of the 3rd ICAPS Workshop on Hierarchical Planning (HPlan)},
+  confacronym = {HPlan},
+  year      = {2020},
+  abstract  = {Search methods are useful in hierarchical task network (HTN) planning to make performance less dependent on the domain knowledge provided, and to minimize plan costs. Here we investigate Monte-Carlo tree search (MCTS) as a new algorithmic alternative in HTN planning. We implement combinations of MCTS with heuristic search in Panda. We furthermore investigate MCTS in JSHOP, to address lifted (non-grounded) planning, leveraging the fact that, in contrast to other search methods, MCTS does not require a grounded task representation. Our new methods yield coverage performance on par with the state of the art, but in addition can effectively minimize plan cost over time.},
+  keywords  = {2020,workshop,reviewed}
+}
+
+@inproceedings{BehnkeAAAI22,
+  author    = {Gregor Behnke and Florian Pollitt and Daniel H{\"{o}}ller and Pascal Bercher and Ron Alford},
+  title     = {Making Translations to Classical Planning Competitive with Other {HTN} Planners},
+  booktitle = {Proceedings of the 36th {AAAI} Conference on Artificial Intelligence ({AAAI})},
+  confacronym = {AAAI},
+  pages     = {9687--9697},
+  publisher = {{AAAI} Press},
+  year      = {2022},
+  pdflocal  = {BehnkeAAAI22.pdf},
+  abstract  = {Translation-based approaches to planning allow for solving problems in complex and expressive formalisms via the means of highly efficient solvers for simpler formalisms. To be effective, these translations have to be constructed appropriately. The current existing translation of the highly expressive formalism of HTN planning into the more simple formalism of classical planning is not on par with the performance of current dedicated HTN planners. With our contributions in this paper, we close this gap: we describe new versions of the translation that reach the performance of state-of-the-art dedicated HTN planners. We present new translation techniques both for the special case of totally-ordered HTNs as well as for the general partially-ordered case. In the latter, we show that our new translation generates only linearly many actions, while the previous encoding generates and exponential number of actions.},
+  keywords  = {2022,conference}
+}
+
+@inproceedings{HoellerICAPS22A,
+  author    = {Daniel H{\"{o}}ller and Gregor Behnke},
+  title     = {Encoding Lifted Classical Planning in Propositional Logic},
+  booktitle = {Proceedings of the 32nd International Conference on Automated Planning and Scheduling ({ICAPS})},
+  confacronym = {ICAPS},
+  pages     = {134--144},
+  publisher = {{AAAI} Press},
+  year      = {2022},
+  pdflocal  = {HoellerICAPS22A.pdf},
+  abstract  = {Planning models are usually defined in lifted, i.e. first order formalisms, while most solvers need (variable-free) grounded representations. Though techniques for grounding prune unnecessary parts of the model, grounding might – nevertheless – be prohibitively expensive in terms of runtime. To overcome this issue, there has been renewed interest in solving planning problems based on the lifted representation in the last years. While these approaches are based on (heuristic) search, we present an encoding of lifted classical planning in propositional logic and use SAT solvers to solve it. Our evaluation shows that our approach is competitive with the heuristic search-based approaches in satisficing planning and outperforms them in a (length-)optimal setting.},
+  keywords  = {2022,conference}
+}
+
+@inproceedings{HoellerICAPS22B,
+  author    = {Daniel H{\"{o}}ller and Julia Wichlacz and Pascal Bercher and Gregor Behnke},
+  title     = {Compiling {HTN} Plan Verification Problems into {HTN} Planning Problems},
+  booktitle = {Proceedings of the 32nd International Conference on Automated Planning and Scheduling ({ICAPS})},
+  confacronym = {ICAPS},
+  pages     = {145--150},
+  publisher = {{AAAI} Press},
+  year      = {2022},
+  pdflocal  = {HoellerICAPS22B.pdf},
+  abstract  = {Plan Verification is the task of deciding whether a sequence of actions is a solution for a given planning problem. In HTN planning, the task is computationally expensive and may be up to NP-hard. However, there are situations where it needs to be solved, e.g. when a solution is post-processed, in systems using approximation, or just to validate whether a planning system works correctly (e.g. for debugging or in a competition). There are verification systems based on translations to propositional logic and on techniques from parsing. Here we present a third approach and translate HTN plan verification problems into HTN planning problems. These can be solved using any HTN planning system. We collected a new benchmark set based on models and results of the 2020 International Planning Competition. Our evaluation shows that our compilation outperforms the approaches from the literature.},
+  keywords  = {2022,conference}
+}
+
+@inproceedings{SteinmetzICAPS22,
+  author    = {Marcel Steinmetz and Daniel Fi{\v{s}}er and Hasan Ferit Eniser and Patrick Ferber and Timo P. Gros and Philippe Heim and Daniel H{\"{o}}ller and Xandra Schuler and Valentin W{\"{u}}stholz and Maria Christakis and J{\"{o}}rg Hoffmann},
+  title     = {Debugging a Policy: Automatic Action-Policy Testing in {AI} Planning},
+  booktitle = {Proceedings of the 32nd International Conference on Automated Planning and Scheduling ({ICAPS})},
+  confacronym = {ICAPS},
+  pages     = {353--361},
+  publisher = {{AAAI} Press},
+  year      = {2022},
+  pdflocal  = {SteinmetzICAPS22.pdf},
+  abstract  = {Testing is a promising way to gain trust in neural action policies π. Previous work on policy testing in sequential decision making targeted environment behavior leading to failure conditions. But if the failure is unavoidable given that behavior, then π is not actually to blame. For a situation to qualify as a “bug” in π, there must be an alternative policy π' that does better. We introduce a generic policy testing framework based on that intuition. This raises the bug confirmation problem, deciding whether or not a state is a bug. We analyze the use of optimistic and pessimistic bounds for the design of test oracles approximating that problem. We contribute an implementation of our framework in classical planning, experimenting with several test oracles and with random-walk methods generating test states biased to poor policy performance and/or state novelty. We evaluate these techniques on policies π learned with ASNets. We find that they are able to effectively identify bugs in these π, and that our random-walk biases improve over uninformed baselines.},
+  keywords  = {2022,conference}
+}
+
+@inproceedings{WichlaczIJCAI22,
+  author    = {Julia Wichlacz and Daniel H{\"{o}}ller and J{\"{o}}rg Hoffmann},
+  title     = {Landmark Heuristics for Lifted Classical Planning},
+  booktitle = {Proceedings of the 31st International Joint Conference on Artificial Intelligence ({IJCAI})},
+  confacronym = {IJCAI},
+  pages     = {4665--4671},
+  publisher = {IJCAI organization},
+  year      = {2022},
+  pdflocal  = {WichlaczIJCAI22.pdf},
+  abstract  = {While state-of-the-art planning systems need a grounded (propositional) task representation, the input model is provided “lifted”, specifying predicates and action schemas with variables over a finite object universe. The size of the grounded model is exponential in predicate/action-schema arity, limiting applicability to cases where it is small enough. Recent work has taken up this challenge, devising an effective lifted forward search planner as basis for lifted heuristic search, as well as a variety of lifted heuristic functions based on the delete relaxation. Here we add a novel family of lifted heuristic functions, based on landmarks. We design two methods for landmark extraction in the lifted setting. The resulting heuristics exhibit performance advantages over previous heuristics in several benchmark domains. Especially the combination with lifted delete relaxation heuristics to a LAMA-style planner yields good results, beating the previous state of the art in lifted planning.},
+  keywords  = {2022,conference}
+}
+
+
+@article{BercherAIM21,
+  author    = {Pascal Bercher and Daniel H{\"{o}}ller and Gregor Behnke and Susanne Biundo and Vikas Shivashankar and Ron Alford},
+  title     = {Report on the First and Second Workshops on Hierarchical Planning Held at the International Conference on Automated Planning and Scheduling},
+  journal   = {{AI} Magazine},
+  confacronym = {AI-Mag},
+  volume    = {42},
+  number    = {1},
+  pages     = {83--85},
+  year      = {2021},
+  abstract  = {Hierarchical planning has attracted renewed interest in the last couple of years. As a consequence, the time was right to establish a workshop devoted entirely to hierarchical planning – an insight shared by many supporters. In this paper we report on the first ICAPS workshop on Hierarchical Planning held in Delft, The Netherlands, in 2018 as well as on the second workshop held in Berkeley, CA, USA, in 2019.},
+  keywords  = {2021,article}
+}
+
+@article{HollerKI21,
+  author    = {Daniel H{\"{o}}ller and Gregor Behnke and Pascal Bercher and Susanne Biundo},
+  title     = {The {PANDA} Framework for Hierarchical Planning},
+  journal   = {K{\"{u}}nstliche Intelligenz},
+  confacronym = {KI},
+  volume    = {35},
+  number    = {3},
+  pages     = {391--396},
+  year      = {2021},
+  pdflink   = {https://rdcu.be/cdgmZ},
+  abstract  = {During the last years, much progress has been made in hierarchical planning towards domain-independent systems that come with sophisticated techniques to solve planning problems instead of relying on advice in the input model. Several of these novel methods have been integrated into the PANDA framework, which is a software system to reason about hierarchical planning tasks. Besides solvers for planning problems based on plan space search, progression search, and translation to propositional logic, it also includes techniques for related problems like plan repair, plan and goal recognition, or plan verification. These various techniques share a common infrastructure, like e.g. a standard input language or components for grounding and reachability analysis. This article gives an overview over the PANDA framework, introduces the basic techniques from a high level perspective, and surveys the literature describing the diverse components in detail.},
+  keywords  = {2021,article}
+}
+
+
+@inproceedings{HoellerAAAI21,
+  author    = {Daniel H{\"{o}}ller and Pascal Bercher},
+  title     = {Landmark Generation in {HTN} Planning},
+  booktitle = {Proceedings of the 35th {AAAI} Conference on Artificial Intelligence ({AAAI})},
+  confacronym = {AAAI},
+  pages     = {11826--11834},
+  publisher = {{AAAI} Press},
+  year      = {2021},
+  pdflocal  = {HoellerAAAI21.pdf},
+  abstract  = {Landmarks (LMs) are state features that need to be made true or tasks that need to be contained in every solution of a planning problem. They are a valuable source of information in planning and can be exploited in various ways. LMs have been used both in classical and hierarchical planning, but while there is much work in classical planning, the techniques in hierarchical planning are less evolved. We introduce a novel LM generation method for Hierarchical Task Network (HTN) planning and show that it is sound and incomplete. We show that every complete approach is as hard as the co-class of the underlying HTN problem, i.e. coNP-hard for our setting (while our approach is in P). On a widely used benchmark set, our approach finds more than twice the number of landmarks than the approach from the literature. Though our focus is on LM generation, we show that the newly discovered landmarks bear information beneficial for solvers.},
+  keywords  = {2021,conference}
+}
+
+@inproceedings{HoellerICAPS21A,
+  author    = {Daniel H{\"{o}}ller},
+  title     = {Translating Totally Ordered {HTN} Planning Problems to Classical Planning Problems Using Regular Approximation of Context-Free Languages},
+  booktitle = {Proceedings of the 31st International Conference on Automated Planning and Scheduling ({ICAPS})},
+  confacronym = {ICAPS},
+  pages     = {159--167},
+  publisher = {{AAAI} Press},
+  year      = {2021},
+  pdflocal  = {HoellerICAPS21A.pdf},
+  abstract  = {There have been several approaches to use techniques from classical planning in HTN planning. While a direct translation is in general not possible due to the different expressiveness, there have been translations of bounded HTN problems and approaches to use classical heuristics in HTN search procedures. In this paper, we introduce a different approach. We exploit methods from the field of Computational Linguistics introduced to approximate Context-Free Languages by Finite Automata. We use them to approximate the decomposition structure of Totally Ordered (TO) HTN planning problems by classical problems. The resulting problem can then be solved using standard classical planning systems. A subset of TO-HTN problems can be translated exactly, i.e., without changing the set of solutions. For problems where an approximation is necessary, we use an overapproximation, i.e., the set of solutions to the classical problem is a superset of that of the HTN problem. We then use plan verification to check whether a solution is valid and thus obtain a sound and complete overall approach. The resulting system outperforms the state of the art on the IPC 2020 benchmark set in terms of coverage.},
+  keywords  = {2021,conference}
+}
+
+
+@inproceedings{HoellerICAPS21B,
+  author    = {Daniel H{\"{o}}ller and Gregor Behnke},
+  title     = {Loop Detection in the {PANDA} Planning System},
+  booktitle = {Proceedings of the 31st International Conference on Automated Planning and Scheduling ({ICAPS})},
+  confacronym = {ICAPS},
+  pages     = {168--173},
+  publisher = {{AAAI} Press},
+  year      = {2021},
+  pdflocal  = {HoellerICAPS21B.pdf},
+  abstract  = {The International Planning Competition (IPC) in 2020 was the first one for a long time to host tracks on Hierarchical Task Network (HTN) planning. HYPERTENSION, the winner of the tack on totally-ordered problems, comes with an interesting technique: it stores parts of the decomposition path in the state to mark expanded tasks and forces its depth first search to leave recursive structures in the hierarchy. This can be seen as a form of loop detection (LD) – a technique that is not very common in HTN planning. This might be due to the spirit of encoding enough advice in the model to find plans (so that loop detection is simply not necessary), or because it becomes a computationally hard task in the general (i.e. partially-ordered) setting. We integrated several approximate and exact techniques for LD into the progression search of the HTN planner PANDA. We test our techniques on the benchmark set of the IPC 2020. Both in the partial ordered and total ordered track, PANDA with LD performs better than the respective winner of the competition.},
+  keywords  = {2021,conference}
+}
+
+
+@inproceedings{LauerIJCAI21,
+  author    = {Pascal Lauer and {\'{A}}lvaro Torralba and Daniel Fi{\v{s}}er and Daniel H{\"{o}}ller and Julia Wichlacz and J{\"{o}}rg Hoffmann},
+  title     = {Polynomial-Time in {PDDL} Input Size: Making the Delete Relaxation Feasible for Lifted Planning},
+  booktitle = {Proceedings of the 30th International Joint Conference on Artificial Intelligence ({IJCAI})},
+  confacronym = {IJCAI},
+  pages     = {4119--4126},
+  publisher = {IJCAI organization},
+  year      = {2021},
+  abstract  = {Polynomial-time heuristic functions for planning are commonplace since 20 years. But polynomial-time in which input? Almost all existing approaches are based on a grounded task representation, not on the actual PDDL input which is exponentially smaller. This limits practical applicability to cases where the grounded representation is "small enough". Previous attempts to tackle this problem for the delete relaxation leveraged symmetries to reduce the blow-up. Here we take a more radical approach, applying an additional relaxation to obtain a heuristic function that runs in time polynomial in the size of the PDDL input. Our relaxation splits the predicates into smaller predicates of fixed arity K. We show that computing a relaxed plan is still NP-hard (in PDDL input size) for K>=2, but is polynomial-time for K=1. We implement a heuristic function for K=1 and show that it can improve the state of the art on benchmarks whose grounded representation is large. },
+  keywords  = {2021,conference}
+}
+
+@inproceedings{GrosQEST21,
+  author    = {Timo P. Gros and Daniel H{\"{o}}ller and J{\"{o}}rg Hoffmann and Michaela Klauck and Hendrik Meerkamp and Verena Wolf},
+  title     = {{DSMC} Evaluation Stages: Fostering Robust and Safe Behavior in Deep Reinforcement Learning},
+  booktitle = {Proceedings of the 18th International Conference on Quantitative Evaluation of SysTems (QEST)},
+  confacronym = {QEST},
+  pages     = {197--216},
+  publisher = {Springer},
+  year      = {2021},
+  abstract  = {Neural networks (NN) are gaining importance in sequential decision-making. Deep reinforcement learning (DRL), in particular, is extremely successful in learning action policies in complex and dynamic environments. Despite this success however, DRL technology is not without its failures, especially in safety-critical applications: (i) the training objective maximizes average rewards, which may disregard rare but critical situations and hence lack local robustness; (ii) optimization objectives targeting safety typically yield degenerated reward structures which for DRL to work must be replaced with proxy objectives. Here we introduce methodology that can help to address both deﬁciencies. We incorporate evaluation stages (ES) into DRL, leveraging recent work on deep statistical model checking (DSMC) which veriﬁes NN policies in MDPs. Our ES apply DSMC at regular intervals to determine state space regions with weak performance. We adapt the subsequent DRL training priorities based on the outcome, (i) focusing DRL on critical situations, and (ii) allowing to foster arbitrary objectives. We run case studies in Racetrack, an abstraction of autonomous driving that requires navigating a map without crashing into a wall. Our results show that DSMC-based ES can signiﬁcantly improve both (i) and (ii).},
+  keywords  = {2021,conference}
+}
+
+@inproceedings{WichlaczSoCS21,
+  author    = {Julia Wichlacz and Daniel H{\"{o}}ller and J{\"{o}}rg Hoffmann},
+  title     = {Landmark Heuristics for Lifted Planning -- Extended Abstract},
+  booktitle = {Proceedings of the 14th International Symposium on Combinatorial Search ({SoCS})},
+  confacronym = {SoCS},
+  pages     = {242--244},
+  publisher = {{AAAI} Press},
+  year      = {2021},
+  abstract  = {Planning problems are usually modeled using lifted representations, they specify predicates and action schemas using variables over a finite universe of objects. However, current planning systems like Fast Downward need a grounded (propositional) input model. The process of grounding might result in an exponential blowup of the model size. This limits the application of grounded planning systems in practical applications. Recent work introduced an efficient planning system for lifted heuristic search, but the work on lifted heuristics is still limited. In this extended abstract, we introduce a novel lifted heuristic based on landmarks, which we extract from the lifted problem representation. Preliminary results on a benchmark set specialized to lifted planning show that there are domains where our approach finds enough landmarks to guide the search more effective than the heuristics available.},
+  keywords  = {2021,conference}
+}
+
+
+@article{HoellerJAIR20,
+  author    = {Daniel H{\"{o}}ller and Pascal Bercher and Gregor Behnke and Susanne Biundo},
+  title     = {{HTN} Planning as Heuristic Progression Search},
+  journal   = {Journal of Artificial Intelligence Research (JAIR)},
+  confacronym = {JAIR},
+  volume    = {67},
+  pages     = {835--880},
+  year      = {2020},
+  pdflink   = {https://doi.org/10.1613/jair.1.11282},
+  abstract  = {The majority of search-based HTN planning systems can be divided into those searching a space of partial plans (a plan space) and those performing progression search, i.e., that build the solution in a forward manner. So far, all HTN planners that guide the search by using heuristic functions are based on plan space search. Those systems represent the set of search nodes more effectively by maintaining a partial ordering between tasks, but they have only limited information about the current state during search. In this article, we propose the use of progression search as basis for heuristic HTN planning systems. Such systems can calculate their heuristics incorporating the current state, because it is tracked during search. Our contribution is the following: We introduce two novel progression algorithms that avoid unnecessary branching when the problem at hand is partially ordered and show that both are sound and complete. We show that defining systematicity is problematic for search in HTN planning, propose a definition, and show that it is fulfilled by one of our algorithms. Then, we introduce a method to apply arbitrary classical planning heuristics to guide the search in HTN planning. It relaxes the HTN planning model to a classical model that is only used for calculating heuristics. It is updated during search and used to create heuristic values that are used to guide the HTN search. We show that it can be used to create HTN heuristics with interesting theoretical properties like safety, goal-awareness, and admissibility. Our empirical evaluation shows that the resulting system outperforms the state of the art in search-based HTN planning.},
+  keywords  = {2020,article}
+}
+
+@inproceedings{BehnkeAAAI20,
+  author    = {Gregor Behnke and Daniel H{\"{o}}ller and Alexander Schmid and Pascal Bercher and Susanne Biundo},
+  title     = {On Succinct Groundings of {HTN} Planning Problems},
+  booktitle = {Proceedings of the 34th {AAAI} Conference on Artificial Intelligence ({AAAI})},
+  confacronym = {AAAI},
+  pages     = {9775--9784},
+  publisher = {{AAAI} Press},
+  year      = {2020},
+  abstract  = {Both search-based and translation-based planning systems usually operate on grounded representations of the problem. Planning models, however, are commonly defined using lifted description languages. Thus, planning systems usually generate a grounded representation of the lifted model as a pre-processing step. For HTN planning models, only one method to ground lifted models has been published so far. In this paper we present a new approach for grounding HTN planning problems that produces smaller groundings in a shorter timespan than the previously published method.},
+  keywords  = {2020,conference}
+}
+
+
+@inproceedings{HoellerAAAI20,
+  author    = {Daniel H{\"{o}}ller and Gregor Behnke and Pascal Bercher and Susanne Biundo and Humbert Fiorino and
+               Damien Pellier and Ron Alford},
+  title     = {{HDDL:} An Extension to {PDDL} for Expressing Hierarchical Planning Problems},
+  booktitle = {Proceedings of the 34th {AAAI} Conference on Artificial Intelligence ({AAAI})},
+  confacronym = {AAAI},
+  pages     = {9883--9891},
+  publisher = {{AAAI} Press},
+  year      = {2020},
+  abstract  = {The research in hierarchical planning has made considerable progress in the last few years. Many recent systems do not rely on hand-tailored advice anymore to find solutions, but are supposed to be domain-independent systems that come with sophisticated solving techniques. In principle, this development would make the comparison between systems easier (because the domains are not tailored to a single system anymore) and – much more important – also the integration into other systems, because the modeling process is less tedious (due to the lack of advice) and there is no (or less) commitment to a certain planning system the model is created for. However, these advantages are destroyed by the lack of a common input language and feature set supported by the different systems. In this paper, we propose an extension to PDDL, the description language used in non-hierarchical planning, to the needs of hierarchical planning systems.},
+  keywords  = {2020,conference}
+}
+
+@inproceedings{KohnCOLING20,
+  author    = {Arne K{\"{o}}hn and Julia Wichlacz and {\'{A}}lvaro Torralba and Daniel H{\"{o}}ller and
+               J{\"{o}}rg Hoffmann and Alexander Koller},
+  title     = {Generating Instructions at Different Levels of Abstraction},
+  booktitle = {Proceedings of the 28th International Conference on Computational Linguistics ({COLING})},
+  confacronym = {COLING},
+  pages     = {2802--2813},
+  publisher = {International Committee on Computational Linguistics},
+  year      = {2020},
+  abstract  = {When generating technical instructions, it is often convenient to describe complex objects in the world at different levels of abstraction. A novice user might need an object explained piece by piece, while for an expert, talking about the complex object (e.g. a wall or railing) directly may be more succinct and efficient. We show how to generate building instructions at different levels of abstraction in Minecraft. We introduce the use of hierarchical planning to this end, a method from AI planning which can capture the structure of complex objects neatly. A crowdsourcing evaluation shows that the choice of abstraction level matters to users, and that an abstraction strategy which balances low-level and high-level object descriptions compares favorably to ones which don’t.},
+  keywords  = {2020,conference}
+}
+
+
+@inproceedings{HoellerIJCAI20,
+  author    = {Daniel H{\"{o}}ller and Pascal Bercher and Gregor Behnke},
+  title     = {Delete- and Ordering-Relaxation Heuristics for {HTN} Planning},
+  booktitle = {Proceedings of the 29th International Joint Conference on Artificial Intelligence ({IJCAI})},
+  confacronym = {IJCAI},
+  pages     = {4076--4083},
+  publisher = {IJCAI organization},
+  year      = {2020},
+  pdflocal  = {HoellerIJCAI20.pdf},
+  abstract  = {In HTN planning, the hierarchy has a wide impact on solutions. First, there is (usually) no state-based goal given, the objective is given via the hierarchy. Second, it enforces actions to be in a plan. Third, planners are not allowed to add actions apart from those introduced via decomposition, i.e. via the hierarchy. However, no heuristic considers the interplay of hierarchy and actions in the plan exactly (without relaxation) because this makes heuristic calculation NP-hard even under delete relaxation. We introduce the problem class of delete- and ordering-free HTN planning as basis for novel HTN heuristics and show that its plan existence problem is still NP-complete. We then introduce heuristics based on the new class using an integer programming model to solve it.},
+  keywords  = {2020,conference}
+}
+
+
+@inproceedings{HoellerKI20,
+  author    = {Daniel H{\"{o}}ller and Pascal Bercher and Gregor Behnke and Susanne Biundo},
+  title     = {{HTN} Plan Repair via Model Transformation},
+  booktitle = {Proceedings of the 43rd German Conference on AI ({KI})},
+  confacronym = {KIconf},
+  pages     = {88--101},
+  publisher = {Springer},
+  year      = {2020},
+  pdflocal  = {HoellerKI20.pdf},
+  abstract  = {To make planning feasible, planning models abstract from many details of the modeled system. When executing plans in the actual system, the model might be inaccurate in a critical point, and plan execution may fail. There are two options to handle this case: the previous solution can be modified to address the failure (plan repair), or the planning process can be re-started from the new situation (re-planning). In HTN planning, discarding the plan and generating a new one from the novel situation is not easily possible, because the HTN solution criteria make it necessary to take already executed actions into account. Therefore all approaches to repair plans in the literature are based on specialized algorithms. In this paper, we discuss the problem in detail and introduce a novel approach that makes it possible to use unchanged, off-the-shelf HTN plaGrosHHKMW21nning systems to repair broken HTN plans. That way, no specialized solvers are needed.},
+  keywords  = {2020,conference}
+}
+
+@inproceedings{GrosQEST20,
+  author    = {Timo P. Gros and Daniel H{\"{o}}ller and J{\"{o}}rg Hoffmann and Verena Wolf},
+  title     = {Tracking the Race Between Deep Reinforcement Learning and Imitation Learning},
+  booktitle = {Proceedings of the 17th International Conference on Quantitative Evaluation of SysTems (QEST)},
+  confacronym = {QEST},
+  pages     = {11--17},
+  publisher = {Springer},
+  year      = {2020},
+  abstract  = {Learning-based approaches for solving large sequential decision making problems have become popular in recent years. The resulting agents perform diﬀerently and their characteristics depend on those of the underlying learning approach. Here, we consider a benchmark planning problem from the reinforcement learning domain, the Racetrack, to investigate the properties of agents derived from diﬀerent deep (reinforcement) learning approaches. We compare the performance of deep supervised learning, in particular imitation learning, to reinforcement learning for the Racetrack model. We ﬁnd that imitation learning yields agents that follow more risky paths. In contrast, the decisions of deep reinforcement learning are more foresighted, i.e., avoid states in which fatal decisions are more likely. Our evaluations show that for this sequential decision making problem, deep reinforcement learning performs best in many aspects even though for imitation learning optimal decisions are considered.},
+  keywords  = {2020,conference}
+}
+
+
+@inproceedings{WichlaczSoCS20,
+  author    = {Julia Wichlacz and Daniel H{\"{o}}ller and {\'{A}}lvaro Torralba and J{\"{o}}rg Hoffmann},
+  title     = {Applying Monte-Carlo Tree Search in {HTN} Planning},
+  booktitle = {Proceedings of the 13th International Symposium on Combinatorial Search ({SoCS})},
+  confacronym = {SoCS},
+  pages     = {82--90},
+  publisher = {{AAAI} Press},
+  year      = {2020},
+  pdflocal  = {WichlaczSoCS20.pdf},
+  abstract  = {Search methods are useful in hierarchical task network (HTN) planning to make performance less dependent on the domain knowledge provided, and to minimize plan costs. Here we investigate Monte-Carlo tree search (MCTS) as a new algorithmic alternative in HTN planning. We implement combinations of MCTS with heuristic search in Panda. We furthermore investigate MCTS in JSHOP, to address lifted (non-grounded) planning, leveraging the fact that, in contrast to other search methods, MCTS does not require a grounded task representation. Our new methods yield coverage performance on par with the state of the art, but in addition can effectively minimize plan cost over time.},
+  keywords  = {2020,conference}
+}
+
+
+@Inproceedings {BehnkeHPlan19,
+   title = {More Succinct Grounding of HTN Planning Problems -- Preliminary Results},
+   booktitle = {Proceedings of the 2nd ICAPS Workshop on Hierarchical Planning (HPlan)},
+   confacronym = {HPlan},
+   author = {Gregor Behnke and Daniel H{\"{o}}ller and Pascal Bercher  and Susanne Biundo},
+   year = {2019},
+   abstract  = {Planning systems usually operate on grounded representations of the planning problems during search. Further, planners that use translations into other combinatorial problems also often perform their translations based on a grounded model. Planning models, however, are commonly defined in a lifted formalism. As such, one of the first preprocessing steps a planner performs is to generate a grounded representation. In this paper we present a new approach for grounding HTN planning problems that produces smaller groundings than the previously published method. We expect this decrease in size to lead to more efficient planners.},
+   keywords = {2019,myother,workshop,reviewed}
+}
+
+@Inproceedings {HoellerHPlan19,
+   title = {HDDL -- A Language to Describe Hierarchical Planning Problems},
+   year = {2019},
+   booktitle = {Proceedings of the 2nd ICAPS Workshop on Hierarchical Planning (HPlan)},
+   confacronym = {HPlan},
+   author = {Daniel H{\"{o}}ller and Gregor Behnke and Pascal Bercher  and Susanne Biundo and Humbert Fiorino and Damien Pellier and Ron Alford},
+   abstract  = {The research in hierarchical planning has made considerable progress in the last few years. Many recent systems do not rely on hand-tailored advice anymore to find solutions, but are supposed to be domain-independent systems that come with sophisticated solving techniques. In principle, this development would make the comparison between systems easier (because the domains are not tailored to a single system anymore) and – much more important – also the integration into other systems, because the modeling process is less tedious (due to the lack of advice) and there is no (or less) commitment to a certain planning system the model is created for. However, these advantages are destroyed by the lack of a common input language and feature set supported by the different systems. In this paper, we propose an extension to PDDL, the description language used in non-hierarchical planning, to the needs of hierarchical planning systems. We restrict our language to a basic feature set shared by many recent systems, give an extension of PDDL’s EBNF syntax definition, and discuss our extensions, especially with respect to planner-specific input languages from related work.},
+   keywords = {2019,myother,workshop,reviewed}
+}
+
+@Inproceedings {Behnke2019ICP,
+   title = {Hierarchical Planning in the IPC},
+   year = {2019},
+   booktitle = {Proceedings of the Workshop on the International Planning Competition ({WIPC})},
+   confacronym = {WIPC},
+   author = {Gregor Behnke and Daniel H{\"{o}}ller and Pascal Bercher  and Susanne Biundo and Damien Pellier and Humbert Fiorino and Ron Alford},
+   abstract  = {Over the last years, the amount of research in hierarchical planning has increased, leading to significant improvements in the performance of planners. However, the research is diverging and planners are somewhat hard to compare against each other. This is mostly caused by the fact that there is no standard set of benchmark domains, nor even a common description language for hierarchical planning problems. As a consequence, the available planners support a widely varying set of features and (almost) none of them can solve (or even parse) any problem developed for another planner. With this paper, we propose to create a new track for the IPC in which hierarchical planners will compete. This competition will result in a standardised description language, broader support for core features of that language among planners, a set of benchmark problems, a means to fairly and objectively compare HTN planners, and for new challenges for planners.},
+   keywords = {2019,myother,workshop,reviewed}
+}
+
+
+@Inproceedings{HoellerIJCAI19,
+  author    = {Daniel H{\"{o}}ller and
+               Pascal Bercher and
+               Gregor Behnke and
+               Susanne Biundo},
+  title     = {On Guiding Search in {HTN} Planning with Classical Planning Heuristics},
+  booktitle = {Proceedings of the 28th International Joint Conference on Artificial Intelligence ({IJCAI})},
+  confacronym = {IJCAI},
+  publisher = {IJCAI organization},
+  year      = {2019},
+  pages     = {6171--6175},
+  abstract  = {Planning is the task of finding a sequence of actions that achieves the goal(s) of an agent. It is solved based on a model describing the environment and how to change it. There are several approaches to solve planning tasks, two of the most popular are classical planning and hierarchical planning. Solvers are often based on heuristic search, but especially regarding domain-independent heuristics, techniques in classical planning are more sophisticated. However, due to the different problem classes, it is difficult to use them in hierarchical planning. In this paper we describe how to use arbitrary classical heuristics in hierarchical planning and show that the resulting system outperforms the state of the art in hierarchical planning.},
+  keywords  = {2019,myother,conference}
+}
+
+@Inproceedings{BercherIJCAI19,
+  author    = {Pascal Bercher and
+               Ron Alford and
+               Daniel H{\"{o}}ller},
+  title     = {A Survey on Hierarchical Planning -- One Abstract Idea, Many Concrete Realizations},
+  booktitle = {Proceedings of the 28th International Joint Conference on Artificial Intelligence ({IJCAI})},
+  confacronym = {IJCAI},
+  publisher = {IJCAI organization},
+  pages     = {6267--6275},
+  year      = {2019},
+  pdflocal  = {BercherIJCAI19.pdf},
+  abstract  = {Hierarchical planning has attracted renewed interest in the last couple of years, which led to numerous novel formalisms, problem classes, and theoretical investigations. Yet it is important to differentiate between the various formalisms and problem classes, since they show – sometimes fundamental – differences with regard to their expressivity and computational complexity: Some of them can be regarded equivalent to non-hierarchical formalisms while others are clearly more expressive. We survey the most important hierarchical problem classes and explain their differences and similarities. We furthermore give pointers to some of the best-known planning systems capable of solving the respective problem classes.},
+  keywords  = {2019,myother,conference}
+}
+
+@Inproceedings {BehnkeIJCAI19,
+   title = {Finding Optimal Solutions in HTN Planning -- A SAT-based Approach},
+   year = {2019},
+   booktitle = {Proceedings of the 28th International Joint Conference on Artificial Intelligence (IJCAI)},
+  confacronym = {IJCAI},
+   author = {Gregor Behnke and Daniel H{\"{o}}ller and Susanne Biundo},
+   publisher = {IJCAI organization},
+   pages = {5500--5508},
+   abstract  = {Over the last years, several new approaches to Hierarchical Task Network (HTN) planning have been proposed that increased the overall performance of HTN planners. However, the focus has been on agile planning – on finding a solution as quickly as possible. Little work has been done on finding optimal plans. We show how the currently best-performing approach to HTN planning – the translation into propositional logic – can be utilised to find optimal plans. Such SAT-based planners usually bound the HTN problem to a certain depth of decomposition and then translate the problem into a propositional formula. To generate optimal plans, the length of the solution has to be bounded instead of the decomposition depth. We show the relationship between these bounds and how it can be handled algorithmically. Based on this, we propose an optimal SAT-based HTN planner and show that it performs favourably on a benchmark set.},
+   keywords = {2019,myother,conference}
+}
+
+@Inproceedings {BehnkeAAAI19,
+   title = {Bringing Order to Chaos -- A Compact Representation of Partial Order in SAT-based HTN Planning},
+   year = {2019},
+   publisher = {AAAI Press},
+   booktitle = {Proceedings of the 33rd AAAI Conference on Artificial Intelligence (AAAI)},
+   confacronym = {AAAI},
+   author = {Gregor Behnke and Daniel H{\"{o}}ller and Susanne Biundo},
+   pages = {7520--7529},
+   abstract  = {HTN planning provides an expressive formalism to model complex application domains. It has been widely used in real-world applications. However, the development of domain-independent planning techniques for such models is still lacking behind. The need to be informed about both state-transitions and the task hierarchy makes the realisation of search-based approaches difficult, especially with unrestricted partial ordering of tasks in HTN domains. Recently, a translation of HTN planning problems into propositional logic has shown promising empirical results. Such planners benefit from a unified representation of state and hierarchy, but until now require very large formulae to represent partial order. In this paper, we introduce a novel encoding of HTN Planning as SAT. In contrast to related work, most of the reasoning on ordering relations is not left to the SAT solver, but done beforehand. This results in much smaller formulae and, as shown in our evaluation, in a planner that outperforms previous SAT-based approaches as well as the state-of-the-art in search-based HTN planning.},
+   keywords = {2019,myother,conference}
+}
+
+@Proceedings {BercherHPlan18,
+   title = {Proceedings of the 1st ICAPS Workshop on Hierarchical Planning},
+   year = {2018},
+   editor = {Pascal Bercher and Daniel H{\"{o}}ller and Susanne Biundo and Ron Alford},
+   keywords = {2018,myother,other,proceedings}
+}
+
+@Proceedings {BercherHPlan20,
+   title = {Proceedings of the 3rd ICAPS Workshop on Hierarchical Planning},
+   year = {2020},
+   editor = {Pascal Bercher and Daniel H{\"{o}}ller and Roman Bart{\'{a}}k and Susanne Biundo},
+   keywords = {2020,myother,other,proceedings}
+}
+
+@Proceedings {BercherHPlan23,
+   title = {Proceedings of the 6th ICAPS Workshop on Hierarchical Planning},
+   year = {2023},
+   editor = {Pascal Bercher and Daniel H{\"{o}}ller and Julia Wichlacz and Susanne Biundo},
+   keywords = {2023,myother,other,proceedings}
+}
+
+@Proceedings {BehnkeIPC20,
+   title = {Proceedings of the 10th International Planning Competition: Planner and Domain Abstracts},
+   year = {2020},
+   editor = {Gregor Behnke and Daniel H{\"{o}}ller and Pascal Bercher},
+   keywords = {2020,myother,other,proceedings}
+}
+
+
+@Proceedings {BehnkeIPC21,
+   title = {Proceedings of the ICAPS Workshop on the International Planning Competition},
+   year = {2021},
+   editor = {Gregor Behnke and Daniel H{\"{o}}ller and Pascal Bercher},
+   keywords = {2021,myother,other,proceedings}
+}
+
+@Inproceedings {HoellerHPlan18,
+   title = {{HTN} Plan Repair Using Unmodified Planning Systems},
+   year = {2018},
+   booktitle = {Proceedings of the 1st ICAPS Workshop on Hierarchical Planning (HPlan)},
+   confacronym = {HPlan},
+   author = {Daniel H{\"{o}}ller and Pascal Bercher  and Gregor Behnke and Susanne Biundo},
+   pages = {26--30},
+   abstract  = {To make planning feasible, planning models abstract from many details of the modeled system. When executing plans in the actual system, the model might be inaccurate in a critical point, and plan execution may fail. There are two options to handle this case: the previous solution can be modified to address the failure (plan repair), or the planning process can be re-started from the new situation (re-planning). In HTN planning, discarding the plan and generating a new one from the novel situation is not easily possible, because the HTN solution criteria make it necessary to take already executed actions into account. Therefore all approaches to repair plans in the literature are based on specialized algorithms. In this paper, we discuss the problem in detail and introduce a novel approach that makes it possible to use unchanged, off-the-shelf HTN planning systems to repair broken HTN plans. That way, no specialized solvers are needed.},
+   keywords = {2018,myother,workshop,reviewed}
+}
+
+@Inproceedings {BehnkeHPlan18,
+   title = {Tracking Branches in Trees -- A Propositional Encoding for Solving Partially-Ordered HTN Planning Problems},
+   year = {2018},
+   booktitle = {Proceedings of the 1st ICAPS Workshop on Hierarchical Planning (HPlan)},
+   confacronym = {HPlan},
+   author = {Gregor Behnke and Daniel H{\"{o}}ller and Susanne Biundo},
+   pages = {40--47},
+   abstract  = {Planning via SAT has proven to be an efficient and versatile planning technique. Its declarative nature allows for an easy integration of additional constraints and can harness the progress made in the SAT community without the need to adapt the planner. However, there has been only little attention to SAT planning for hierarchical domains. To ease encoding, existing approaches for HTN planning require additional assumptions, like non-recursiveness or totally-ordered methods. Both limit the expressiveness of HTN planning severely. We propose the first propositional encodings which are able to solve general, i.e., partially-ordered, HTN planning problems, based on a previous encoding for totally-ordered problems. The empirical evaluation of our encoding shows that it outperforms existing HTN planners significantly.},
+   keywords = {2018,myother,workshop,reviewed}
+}
+
+@Inproceedings {BehnkeICTAI18,
+   title = {Tracking Branches in Trees -- A Propositional Encoding for Solving Partially-Ordered HTN Planning Problems},
+   year = {2018},
+   booktitle = {Proceedings of the 30th IEEE International Conference on Tools with Artificial Intelligence (ICTAI)},
+   confacronym = {ICTAI},
+   pages = {73--80},
+   author = {Gregor Behnke and Daniel H{\"{o}}ller and Susanne Biundo},
+   publisher = {{IEEE} Computer Society},
+   abstract  = {Planning via SAT has proven to be an efficient and versatile planning technique. Its declarative nature allows for an easy integration of additional constraints and can harness the progress made in the SAT community without the need to adapt the planner. However, there has been only little attention to SAT planning for hierarchical domains. To ease encoding, existing approaches for HTN planning require additional assumptions, like non-recursiveness or totally-ordered methods. Both limit the expressiveness of HTN planning severely. We propose the first propositional encodings which are able to solve general, i.e., partially-ordered, HTN planning problems, based on a previous encoding for totally-ordered problems. The empirical evaluation of our encoding shows that it outperforms existing HTN planners significantly.},
+   keywords = {2018, myother,conference}
+}
+
+@inproceedings{HoellerICAPS18,
+  author    = {Daniel H{\"{o}}ller and
+               Pascal Bercher and
+               Gregor Behnke and
+               Susanne Biundo},
+  title     = {A Generic Method to Guide {HTN} Progression Search with Classical Heuristics},
+  booktitle = {Proceedings of the 28th International Conference on Automated Planning and Scheduling ({ICAPS})},
+  confacronym = {ICAPS},
+  award     = {Best Student Paper Award},
+  publisher = {{AAAI} Press},
+  pages     = {114--122},
+  year      = {2018},
+  pdflocal  = {HoellerICAPS18.pdf},
+  abstract  = {HTN planning combines actions that cause state transition with grammar-like decomposition of compound tasks that additionally restricts the structure of solutions. There are mainly two strategies to solve such planning problems: decomposition-based search in a plan space and progression-based search in a state space. Existing progression-based systems do either not rely on heuristics (e.g. SHOP2) or calculate their heuristics based on extended or modified models (e.g. GoDeL). Current heuristic planners for standard HTN models (e.g. PANDA) use decomposition-based search. Such systems represent search nodes more compactly due to maintaining a partial order between tasks, but they have no current state at hand during search. This makes the design of heuristics difficult. In this paper we present a progression-based heuristic HTN planning system: We (1) provide an improved progression algorithm, prove its correctness, and empirically show its efficiency gain; and (2) present an approach that allows to use arbitrary classical (non-hierarchical) heuristics in HTN planning. Our empirical evaluation shows that the resulting system outperforms the state-of-the-art in HTN planning.},
+  keywords  = {2018,diss,conference}
+}
+
+
+@Inproceedings {BehnkeAAAI18,
+   title = {totSAT -- Totally-Ordered Hierarchical Planning through {SAT}},
+   year = {2018},
+   publisher = {AAAI Press},
+   booktitle = {Proceedings of the 32nd AAAI Conference on Artificial Intelligence (AAAI)},
+   confacronym = {AAAI},
+   pages = {6110--6118},
+   author = {Gregor Behnke and Daniel H{\"{o}}ller and Susanne Biundo},
+   abstract  = {In this paper, we propose a novel SAT-based planning approach for hierarchical planning by introducing the SAT-based planner totSAT for the class of totally-ordered HTN planning problems. We use the same general approach as SAT planning for classical planning does: bound the problem, translate the problem into a formula, and if the formula is not satisfiable, increase the bound. In HTN planning, a suitable bound is the maximum depth of decomposition. We show how totally-ordered HTN planning problems can be translated into a SAT formula, given this bound. Furthermore, we have conducted an extensive empirical evaluation to compare our new planner against state-of-the-art HTN planners. It shows that our technique outperforms any of these systems.},
+   keywords = {2018,myother,conference}
+}
+
+@Inproceedings {HoellerICTAI18,
+   title = {Plan and Goal Recognition as {HTN} Planning},
+   year = {2018},
+   booktitle = {Proceedings of the 30th IEEE International Conference on Tools with Artificial Intelligence (ICTAI)},
+   confacronym = {ICTAI},
+   award = {Best Paper Award},
+   pages = {466--473},
+   author = {Daniel H{\"{o}}ller and Gregor Behnke and Pascal Bercher  and Susanne Biundo},
+   publisher = {{IEEE} Computer Society},
+   abstract  = {Plan- and Goal Recognition (PGR) is the task of inferring the goals and plans of an agent based on its actions. Traditional approaches in PGR are based on a plan library including pairs of plans and corresponding goals. In recent years, the field successfully exploited the performance of planning systems for PGR. The main benefits are the presence of efficient solvers and well-established, compact formalisms for behavior representation. However, the expressivity of the STRIPS planning models used so far is limited, and models in PGR are often structured in a hierarchical way. We present the approach Plan and Goal Recognition as HTN Planning that combines the expressive but still compact grammar-like HTN representation with the advantage of using unmodified, off-the-shelf planning systems for PGR. Our evaluation shows that – using our approach – current planning systems are able to handle large models with thousands of possible goals, that the approach results in high recognition rates, and that it works even when the environment is partially observable, i.e., if the observer might miss observations.},
+   keywords = {2018,diss,conference}
+}
+
+@Inproceedings {HoellerPAIR18,
+   title = {Plan and Goal Recognition as {HTN} Planning},
+   year = {2018},
+   booktitle = {Proceedings of the AAAI 2018 Workshop on Plan, Activity, and Intent Recognition (PAIR)},
+   confacronym = {PAIR},
+   author = {Daniel H{\"{o}}ller and Pascal Bercher  and Gregor Behnke and Susanne Biundo},
+   pages = {607--613},
+   publisher = {{AAAI} Press},
+   abstract  = {Plan- and Goal Recognition (PGR) is the task of inferring the goals and plans of an agent based on its actions. A few years ago, an approach has been introduced that successfully exploits the performance of planning systems to solve it. That way, no specialized solvers are needed and PGR benefits from present and future research in planning. The approach uses classical planning systems and needs to plan (at least) once for every possible goal. However, models in PGR are often structured in a hierarchical way, similar to Hierarchical Task Networks (HTNs). These models are strictly more expressive than those in classical planning and can describe partially ordered sets of tasks or multiple goals with interleaving plans. We present the approach PGR as HTN Planning that enables the recognition of complex agent behavior by using unmodified, off-the-shelf HTN planners. Planning is thereby needed only once, regardless of how many possible goals there are. Our evaluation shows that current planning systems are able to handle large models with thousands of possible goals and that the approach results in high recognition rates.},
+   keywords = {2018,myother,workshop,reviewed}
+}
+
+@Inproceedings {LeichtmannTCST18,
+   title = {Towards a Companion System Incorporating Human Planning Behavior -- A Qualitative Analysis of Human Strategies},
+   year = {2018},
+   booktitle = {Proceedings of the 3rd Transdisciplinary Conference on Support Technologies (TCST)},
+   confacronym = {TCST},
+   award = {Best Paper Award},
+   author = {Benedikt Leichtmann and Pascal Bercher and Daniel H{\"{o}}ller and Gregor Behnke and Susanne Biundo and Verena Nitsch and Martin Baumann},
+   abstract  = {User-friendly Companion Systems require Artificial Intelligence planning to take into account human planning behavior. We conducted a qualitative exploratory study of human planning in a knowledge rich, real-world scenario. Participants were tasked with setting up a home theater. The effect of strategy knowledge on problem solving was investigated by comparing the performance of two groups: one group (n = 23) with strategy instructions for problemsolving and a control group without such instructions (n = 16). We inductively identify behavioral patterns for human strategy use through Markov matrices. Based on the results, we derive implications for the design of planning-based assistance systems.},
+   keywords = {2018,myother,conference}
+}
+
+
+@Techreport {BercherTR18,
+   title = {A Companion-System Architecture for Realizing Individualized and Situation-Adaptive User Assistance},
+   year = {2018},
+   institution = {Ulm University},
+   type = {Technical Report},
+   author = {Pascal Bercher  and Felix Richter and Frank Honold and Florian Nielsen and Felix Sch{\"{u}}ssel and Thomas Geier and Thilo H{\"{o}}rnle and Stephan Reuter and Daniel H{\"{o}}ller and Gregor Behnke and Michael Weber and Klaus Dietmayer and Wolfgang Minker and Susanne Biundo},
+   abstract  = {We show how techniques from various research areas – most notably hierarchical planning, dialog management, and interaction management – can be employed to realize individualized and situation-adaptive user assistance. We introduce a modular system architecture that is composed of domain-independent components implementing techniques from the respective areas. Systems based on this architecture – so-called Companion-Systems – can provide intelligent assistance in a broad variety of tasks. They provide a user- and situation-adapted sequence of instructions that show how achieve the respective task. Additional explanations are, like the instructions themselves, automatically derived based on a declarative model of the current task. These systems can react to unforeseen execution failures repairing their underlying plans if required. We introduce a prototype system that assists with setting up a home theater and use it as a running example as well as for an empirical evaluation with test subjects that shows the usefulness of our approach. We summarize the work of more than half a decade of research and development done by various research groups from different disciplines. Here, for the first time, we explain the full integration of all components thereby showing “the complete picture” of our approach to provide individualized and situation-adaptive user assistance.},
+   keywords = {2018,myother,other}
+}
+
+@Inproceedings {BehnkeICCT17,
+   title = {Help me make a dinner! Challenges when assisting humans in action planning},
+   year = {2017},
+   publisher = {IEEE},
+   booktitle = {Proceedings of the 2nd International Conference on Companion Technology (ICCT)},
+   confacronym = {ICCT},
+   author = {Gregor Behnke and Benedikt Leichtmann and Pascal Bercher  and Daniel H{\"{o}}ller and Verena Nitsch and Martin Baumann and Susanne Biundo},
+   abstract  = {A promising field of application for cognitive technical systems is individualised user assistance for complex tasks. Here, a companion system usually uses an AI planner to solve the underlying combinatorial problem. Often, the use of a bare black-box planning system is not sufficient to provide individualised assistance, but instead the user has to be able to control the process that generates the presented advice. Such an integration guarantees that the user will be satisfied with the assistance s/he is given, trust the advice more, and is thus more likely to follow it. In this paper, we provide a general theoretical view on this process, called mixed-initiative planning, and derive several research challenges from it.},
+   keywords = {2017,myother,conference}
+}
+
+@Inproceedings {BercherIJCAI17,
+   author = {Pascal Bercher  and Gregor Behnke and Daniel H{\"{o}}ller and Susanne Biundo},
+   title = {An Admissible HTN Planning Heuristic},
+   year = {2017},
+   booktitle = {Proceedings of the 27th International Joint Conference on Artificial Intelligence ({IJCAI})},
+   confacronym = {IJCAI},
+   publisher = {IJCAI organization},
+   pages        = {480--488},
+   abstract  = {Hierarchical task network (HTN) planning is well-known for being an efficient planning approach. This is mainly due to the success of the HTN planning system SHOP2. However, its performance depends on hand-designed search control knowledge. At the time being, there are only very few domain-independent heuristics, which are designed for differing hierarchical planning formalisms. Here, we propose an admissible heuristic for standard HTN planning, which allows to find optimal solutions heuristically. It bases upon the so-called task decomposition graph (TDG), a data structure reflecting reachable parts of the task hierarchy. We show (both in theory and empirically) that rebuilding it during planning can improve heuristic accuracy thereby decreasing the explored search space. The evaluation further studies the heuristic both in terms of plan quality and coverage.},
+   keywords = {2017,myother,conference}
+}
+
+@Inproceedings {BehnkeICAPS17,
+   title = {This is a solution! (\dots but is it though?) -- Verifying solutions of hierarchical planning problems},
+   year = {2017},
+   booktitle = {Proceedings of the 27th International Conference on Automated Planning and Scheduling (ICAPS)},
+   confacronym = {ICAPS},
+   author = {Gregor Behnke and Daniel H{\"{o}}ller and Susanne Biundo},
+   abstract  = {Plan-Verification is the task of determining whether a plan is a solution to a given planning problem. Any plan verifier has, apart from showing that verifying plans is possible in practice, a wide range of possible applications. These include mixed-initiative planning, where a user is integrated into the planning process, and local search, e.g., for post-optimising plans or for plan repair. In addition to its practical interest, plan verification is also a problem worth investigating for theoretical reasons. Recent work showed plan verification for hierarchical planning problems to be NP-complete, as opposed to classical planning where it is in P. As such, plan verification for hierarchical planning problem was – until now – not possible. We describe the first plan verifier for hierarchical planning. It uses a translation of the problem into a SAT formula. Further we conduct an empirical evaluation, showing that the correct output is produced within acceptable time.},
+   publisher    = {{AAAI} Press},
+   pages        = {20--28},
+   keywords = {2017,myother,conference}
+}
+
+@Proceedings{BiundoKI16A,
+   title = {K{\"{u}}nstliche Intelligenz -- Special Issue on Companion Technologies},
+   journal = {K{\"{u}}nstliche Intelligenz},
+   confacronym = {KI},
+   year = {2016},
+   volume = {30},
+   number = {1},
+   Xpages = {5-9},
+   publisher = {Springer},
+   Xdoi = {10.1007/s13218-015-0421-9},
+   author = {Susanne Biundo and Daniel H{\"{o}}ller and Pascal Bercher},
+   keywords = {2016,myother,article}
+}
+
+
+@Article {BerherKI16,
+   title = {Interview with David E. Smith},
+   journal = {K{\"{u}}nstliche Intelligenz},
+   confacronym = {KI},
+   year = {2016},
+   volume = {30},
+   number = {1},
+   pages = {101-105},
+   publisher = {Springer},
+   Xdoi = {10.1007/s13218-015-0403-y},
+   author = {Pascal Bercher  and Daniel H{\"{o}}ller},
+   keywords = {2016,article}
+}
+
+@Article {BiundoKI16B,
+   title = {Companion-Technology: An Overview},
+   journal = {K{\"{u}}nstliche Intelligenz},
+   confacronym = {KI},
+   year = {2016},
+   volume = {30},
+   number = {1},
+   pages = {11-20},
+   publisher = {Springer},
+   Xdoi = {10.1007/s13218-015-0419-3},
+   author = {Susanne Biundo and Daniel H{\"{o}}ller and Bernd Schattenberg and Pascal Bercher},
+   abstract  = {Companion-technology is an emerging field of cross-disciplinary research. It aims at developing technical systems that appear as “Companions” to their users. They serve as co-operative agents assisting in particular tasks or, in a more general sense, even give companionship to humans. Overall, Companion-technology enables technical systems to smartly adapt their services to individual users’ current needs, their requests, situation, and emotion. We give an introduction to the field, discuss the most relevant application areas that will benefit from its developments, and review the related research projects.},
+   keywords = {2016,myother,article}
+}
+
+@Inproceedings {BehnkeICAPS16,
+   title = {Change the Plan -- How hard can that be?},
+   year = {2016},
+   pages = {38-46},
+   publisher = {AAAI Press},
+   booktitle = {Proceedings of the 26th International Conference on Automated Planning and Scheduling ({ICAPS})},
+   confacronym = {ICAPS},
+   Xlocation = {London},
+   Xmonth = {June 12-17},
+   author = {Gregor Behnke and Daniel H{\"{o}}ller and Pascal Bercher  and Susanne Biundo},
+   abstract  = {Interaction with users is a key capability of planning systems that are applied in real-world settings. Such a system has to be able to react appropriately to requests issued by its users. Most of these systems are based on a generated plan that is continually criticised by him, resulting in a mixed-initiative planning system. We present several practically relevant requests to change a plan in the setting of hierarchical task network planning and investigate their computational complexity. On the one hand, these results provide guidelines when constructing algorithms to execute the respective requests, but also provide translations to other well-known planning queries like plan existence or verification. These can be employed to extend an existing planner such that it can form the foundation of a mixed-initiative planning system simply by adding a translation layer on top.},
+   keywords = {2016,myother,conference}
+}
+
+@Inproceedings {HoellerICAPS16,
+   title = {Assessing the Expressivity of Planning Formalisms through the Comparison to Formal Languages},
+   year = {2016},
+   pages = {158-165},
+   publisher = {AAAI Press},
+   booktitle = {Proceedings of the 26th International Conference on Automated Planning and Scheduling ({ICAPS})},
+   confacronym = {ICAPS},
+   pdflocal = {HoellerICAPS16.pdf},
+   author = {Daniel H{\"{o}}ller and Gregor Behnke and Pascal Bercher  and Susanne Biundo},
+   abstract  = {From a theoretical perspective, judging the expressivity of planning formalisms helps to understand the relationship of different representations and to infer theoretical properties. From a practical point of view, it is important to be able to choose the best formalism for a problem at hand, or to ponder the consequences of introducing new representation features. Most work on the expressivity is based either on compilation approaches, or on the computational complexity of the plan existence problem. Recently, we introduced a new notion of expressivity. It is based on comparing the structural complexity of the set of solutions to a planning problem by interpreting the set as a formal language and classifying it with respect to the Chomsky hierarchy. This is a more direct measure than the plan existence problem and enables also the comparison of formalisms that can not be compiled into each other. While existing work on that last approach focused on different hierarchical problem classes, this paper investigates STRIPS with and without conditional effects; though we also tighten some existing results on hierarchical formalisms. Our second contribution is a discussion on the language-based expressivity measure with respect to the other approaches.},
+   keywords = {2016,diss,conference}
+}
+
+@Inproceedings {AlfordICAPS16,
+   title = {Bound to Plan: Exploiting Classical Heuristics via Automatic Translations of Tail-Recursive {HTN} Problems},
+   year = {2016},
+   pages = {20-28},
+   publisher = {AAAI Press},
+   booktitle = {Proceedings of the 26th International Conference on Automated Planning and Scheduling ({ICAPS})},
+   confacronym = {ICAPS},
+   author = {Ron Alford and Gregor Behnke and Daniel H{\"{o}}ller and Pascal Bercher and Susanne Biundo and David Aha},
+   abstract  = {Hierarchical Task Network (HTN) planning is a formalism that can express constraints which cannot easily be expressed by classical (non-hierarchical) planning approaches. It enables reasoning about procedural structures and domain-specific search control knowledge. Yet the cornucopia of modern heuristic search techniques remains largely unincorporated in current HTN planners, in part because it is not clear how to estimate the goal distance for a partially-ordered task network. When using SHOP2-style progression, a task network of yet unprocessed tasks is maintained during search. In the general case it can grow arbitrarily large. However, many – if not most – existing HTN domains have a certain structure (called tail-recursive) where the network’s size is bounded. We show how this bound can be calculated and exploited to automatically translate tail-recursive HTN problems into non-hierarchical STRIPS representations, which allows using both hierarchical structures and classical planning heuristics. In principle, the approach can also be applied to non-tail-recursive HTNs by incrementally increasing the bound. We give three translations with different advantages and present the results of an empirical evaluation with several HTN domains that are translated to PDDL and solved by two current classical planning systems. Our results show that we can automatically find practical bounds for solving partially-ordered HTN problems. We also show that classical planners perform similarly with our automatic translations versus a previous hand-bounded HTN translation which is restricted to totally-ordered problems.},
+   keywords = {2016,myother,conference}
+}
+
+@Inproceedings {BercherECAI16,
+   title = {More than a Name? On Implications of Preconditions and Effects of Compound {HTN} Planning Tasks},
+   year = {2016},
+   pages = {225-233},
+   publisher = {IOS Press},
+   booktitle = {Proceedings of the 22nd European Conference on Artificial Intelligence (ECAI)},
+   confacronym = {ECAI},
+   author = {Pascal Bercher  and Daniel H{\"{o}}ller and Gregor Behnke and Susanne Biundo},
+   abstract  = {},
+   keywords = {2016,myother,conference}
+}
+
+@Inproceedings {BercherISCT15,
+   title = {User-Centered Planning -- A Discussion on Planning in the Presence of Human Users},
+   year = {2015},
+   pages = {79-82},
+   booktitle = {Proceedings of the 1st International Symposium on Companion Technology ({ISCT})},
+   confacronym = {ISCT},
+   author = {Pascal Bercher  and Daniel H{\"{o}}ller and Gregor Behnke and Susanne Biundo},
+   abstract  = {There are several formalizations for hierarchical planning. Many of them allow to specify preconditions and effects for compound tasks. They can be used, e.g., to assist during the modeling process by ensuring that the decomposition methods’ plans “implement” the compound tasks’ intended meaning. This is done based on so-called legality criteria that relate these preconditions and effects to the method’s plans and pose further restrictions. Despite the variety of expressive hierarchical planning formalisms, most theoretical investigations are only known for standard HTN planning, where compound tasks are just names, i.e., no preconditions or effects can be specified. Thus, up to now, a direct comparison to other hierarchical planning formalisms is hardly possible and fundamental theoretical properties are yet unknown. To enable a better comparison between such formalisms (in particular with respect to their computational expressivity), we first provide a survey on the different legality criteria known from the literature. Then, we investigate the theoretical impact of these criteria for two fundamental problems to planning: plan verification and plan existence. We prove that the plan verification problem is at most NP-complete, while the plan existence problem is in the general case both semi-decidable and undecidable, independent of the demanded criteria. Finally, we discuss our theoretical findings and practical implications.},
+   keywords = {2015,myother,conference}
+}
+
+
+@Inbook {BercherCT17A,
+   title = {User-Centered Planning},
+   year = {2017},
+   pages = {79--100},
+   editor = {Susanne Biundo and Andreas Wendemuth},
+   publisher = {Springer},
+   series = {Cognitive Technologies},
+   chapter = {5},
+   booktitle = {Companion Technology -- A Paradigm Shift in Human-Technology Interaction},
+   XDOI = {10.1007/978-3-319-43665-4_5},
+   author = {Pascal Bercher  and Daniel H{\"{o}}ller and Gregor Behnke and Susanne Biundo},
+   abstract  = {AI planning forms a core capability of intelligent systems. It enables goal directed behavior and allows systems to react adequately and flexibly to the current situation. Further, it allows systems to provide advice to a human user on how to reach his or her goals. Though the process of finding a plan is, by itself, a hard computational problem, some new challenges arise when involving a human user into the process. Plans have to be generated in a certain way, so that the user can be included into the plan generation process in case he or she wishes to; the plans should be presented to the user in an adequate way to prevent confusion or even rejection; to improve the trust in the system, it needs to be able to explain its behavior or presented plans. Here, we discuss these challenges and give pointers on how to solve them.},
+   keywords = {2017,myother,bookchapter}
+}
+
+@Inbook {BercherCT17B,
+   title = {Advanced User Assistance for Setting Up a Home Theater},
+   year = {2017},
+   pages = {485--491},
+   editor = {Susanne Biundo and Andreas Wendemuth},
+   publisher = {Springer},
+   series = {Cognitive Technologies},
+   chapter = {24},
+   booktitle = {Companion Technology -- A Paradigm Shift in Human-Technology Interaction},
+   XDOI = {10.1007/978-3-319-43665-4_24},
+   author = {Pascal Bercher  and Felix Richter and Thilo H{\"{o}}rnle and Thomas Geier and Daniel H{\"{o}}ller and Gregor Behnke and Florian Nielsen and Frank Honold and Felix Sch{\"{u}}ssel and Stephan Reuter and Wolfgang Minker and Michael Weber and Klaus Dietmayer and Susanne Biundo},
+   abstract  = {In many situations of daily life, such as in educational, work-related, or social contexts, one can observe an increasing demand for intelligent assistance systems. In this chapter, we show how such assistance can be provided in a wide range of application scenarios – based on the integration of user-centered planning with advanced dialog and interaction management capabilities. Our approach is demonstrated by a system that assists a user in the task of setting up a complex home theater. The theater consists of several hi-fi devices that need to be connected with each other using the available cables and adapters. In particular for technically inexperienced users the task is quite challenging due to the high number of different ports of the devices and because the used cables might not be known to the user. Support is provided by presenting a detailed sequence of instructions that solves the task.},
+   keywords = {2017,myother,bookchapter}
+}
+
+@Inproceedings {BehnkeICAPS15,
+   title = {On the Complexity of {HTN} Plan Verification and its Implications for Plan Recognition},
+   year = {2015},
+   pages = {25-33},
+   publisher = {AAAI Press},
+   booktitle = {Proceedings of the 25th International Conference on Automated Planning and Scheduling ({ICAPS})},
+   confacronym = {ICAPS},
+   author = {Gregor Behnke and Daniel H{\"{o}}ller and Susanne Biundo},
+   abstract  = {In classical planning it is easy to verify if a given sequence of actions is a solution to a planning problem. It has to be checked whether the actions are applicable in the given order and if a goal state is reached after executing them. In this paper we show that verifying whether a plan is a solution to an  planning problem is much harder. More specifically, we prove that this problem is NP-complete, even for very simple  planning problems. Furthermore, this problem remains NP-complete if an executable sequence of tasks is already provided. -like hierarchical structures are commonly used to represent plan libraries in plan and goal recognition. By applying our result to plan and goal recognition we provide insight into its complexity.},
+   keywords = {2015,conference,diss}
+}
+
+@Inproceedings {BercherAAAI15,
+   title = {A Planning-based Assistance System for Setting Up a Home Theater},
+   year = {2015},
+   pages = {4264-4265},
+   publisher = {{AAAI Press}},
+   booktitle = {Proceedings of the 29th AAAI Conference on Artificial Intelligence ({AAAI})},
+   confacronym = {AAAI},
+   author = {Pascal Bercher  and Felix Richter and Thilo H{\"{o}}rnle and Thomas Geier and Daniel H{\"{o}}ller and Gregor Behnke and Florian Nothdurft and Frank Honold and Wolfgang Minker and Michael Weber and Susanne Biundo},
+   abstract  = {Modern technical devices are often too complex for many users to be able to use them to their full extent. Based on planning technology, we are able to provide advanced user assistance for operating technical devices. We present a system that assists a human user in setting up a complex home theater consisting of several HiFi devices. For a human user, the task is rather challenging due to a large number of different ports of the devices and the variety of available cables. The system supports the user by giving detailed instructions how to assemble the theater. Its performance is based on advanced user-centered planning capabilities including the generation, repair, and explanation of plans.},
+   keywords = {2015,myother,conference}
+}
+
+@Inproceedings {HoellerECAI14,
+   title = {Language Classification of Hierarchical Planning Problems},
+   year = {2014},
+   Xvolume = {263},
+   pages = {447-452},
+   publisher = {IOS Press},
+   Xlocation = {Amsterdam},
+   booktitle = {Proceedings of the 21st European Conference on Artificial Intelligence ({ECAI})},
+   confacronym = {ECAI},
+   Xdoi = {10.3233/978-1-61499-419-0-447},
+   author = {Daniel H{\"{o}}ller and Gregor Behnke and Pascal Bercher  and Susanne Biundo},
+   abstract  = {Theoretical results on H TN planning are mostly related to the plan existence problem. In this paper, we study the structure of the generated plans in terms of the language they produce. We show that such languages are always context-sensitive. Furthermore we identify certain subclasses of H TN planning problems which generate either regular or context-free languages. Most importantly we have discovered that H TN planning problems, where preconditions and effects are omitted, constitute a new class of languages that lies strictly between the context-free and context-sensitive languages.},
+   keywords = {2014,diss,conference}
+}
+
+@Inproceedings {HoellerPuK14,
+   title = {Finding User-friendly Linearizations of Partially Ordered Plans},
+   year = {2014},
+   booktitle = {Proceedings of the 28th PuK Workshop ''Planen, Scheduling und Konfigurieren, Entwerfen'' ({PuK})},
+   confacronym = {PuK},
+   pdflocal = {HoellerPuK14.pdf},
+   author = {Daniel H{\"{o}}ller and Pascal Bercher  and Felix Richter and Marvin Schiller and Thomas Geier and Susanne Biundo},
+   abstract  = {Planning models usually do not discriminate between different possible execution orders of the actions within a plan, as long as the sequence remains executable. As the formal planning problem is an abstraction of the real world, it can very well occur that one linearization is more favorable than the other for reasons not captured by the planning model — in particular if actions are performed by a human. Post-hoc linearization of plans is thus a way to improve the quality of a plan enactment. The cost of this transformation decouples from the planning process, and it allows to incorporate knowledge that cannot be expressed within the limitations of a certain planning formalism. In this paper we discuss the idea of finding useful plan linearizations within the formalism of hybrid planning (although the basic ideas are applicable to a broader class of planning models). We propose three concrete models for plan linearization, discuss their ramifications using the application domain of automated user-assistance, and sketch out ways how to empirically validate the assumptions underlying these user-centric models.},
+   keywords = {2014,myother,other,workshop}
+}
+
+@Inproceedings {HoellerPuK11,
+   title = {Integration of a PDDL Planning Framework into the Multi-Agent Simulation System LAMPSys},
+   year = {2011},
+   pdflocal = {HoellerPuK11.pdf},
+   booktitle = {Proceedings of the 26th PuK Workshop ''Planen, Scheduling und Konfigurieren, Entwerfen'' ({PuK})},
+   confacronym = {PuK},
+   author = {Daniel H{\"{o}}ller and Christoph Mies},
+   abstract  = {LAMPSys is a general purpose multi-agent simulation platform that has successfully been used to simulate real-world domains during the last years. A hierarchical agent organization encapsulates decision making by planning centrally for a group of agents. This work introduces a speciﬁcation framework for the generation of PDDL planning instances from a leader agent’s world model. The modeling of the generation process simpliﬁes the integration of diﬀerent planning domains into LAMPSys, since general operators and speciﬁcations can be reused. Another contribution is a plan post-processing that supports plan monitoring. The temporal synchronization of actions in PDDL plans with absolute points in time is extended by a qualitative synchronization with a partial order of actions. In some situations, this approach improves the parallelism of a plan signiﬁcantly. Finally, the application of PDDL planning to the real-world domain of medical evacuation is evaluated.},
+   keywords = {2011,myother,other,workshop}
+}
+
+@Inproceedings {HoellerICAPSDC14,
+   title = {Plan Recognition as Hierarchical Planning},
+   year = {2014},
+   booktitle = {Doctoral Consortium of the International Conference on Automated Planning and Scheduling ({ICAPS DC})},
+   confacronym = {ICAPS-DC},
+   author = {Daniel H{\"{o}}ller},
+   abstract  = {The approach of plan recognition as planning that came up during the last years enables plan recognition systems to benefit from the performance of recent planning systems. Goal probabilities are thereby determined based on plans found by ordinary classical planning systems. Here the approach is shifted from classical planning to hierarchical task network (HTN) planning. As in the classical planning setting, this enables the systems to benefit from the latest research in the field of automated planning. The given approach further enables the use of the more expressive hierarchical domain representations. This is especially interesting because hierarchical, HTN-like formalisms are often used to define plan libraries in plan recognition. A theoretical analysis of the task and of the expressivity of HTN representations is given and it is outlined how HTN planning techniques can be used for plan recognition.},
+   keywords = {2014,myother,other,workshop}
+}
