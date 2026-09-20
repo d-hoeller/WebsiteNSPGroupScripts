@@ -8,5 +8,5 @@
 
 ```
 /* Background Colors */
-	--color-bg-dark: #112a3e;
+	--color-bg-dark: #01283f;
 ```
