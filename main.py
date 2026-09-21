@@ -1,4 +1,5 @@
-import os, shutil
+import os
+
 import bibtexparser
 import re
 from wordcloud import STOPWORDS
@@ -58,34 +59,36 @@ class web_site_publications:
                 self.by_year[y] = []
             self.by_year[y].append(e)
 
-    def write_pub_site(self, f_out, filter, author_sites):
-        self.write_pub_site_base(f_out, author_sites)
+    def write_pub_site(self, f_out, filter, publication_sites):
+        self.write_pub_site_base(f_out, publication_sites)
         self.append_bib_entries(f_out, filter)
 
-    def write_pub_site_base(self, f_out, author_sites):
+    def write_pub_site_base(self, f_out, publication_sites):
         with open(f_out, "w") as f:
             s_init = "+++\ndate = '2026-03-30T21:17:36+02:00'\ndraft = false\ntitle = 'Publications'\n+++\n"
             f.write(s_init)
-            self.all_years.sort(reverse=True)
 
             f.write("<style>\ntable, th, td {\nborder: 0px;\npadding-top: 5px;\npadding-bottom: 5px;\npadding-left: 5px;\n"+
                     "padding-right: 5px;\n}\n</style>\n\n")
 
             f.write("<div style=\"text-align: center;\">\n  <img src=\"/images/venues.png\" alt=\"publication venues\" style=\"width:50%;\">\n</div></br>\n\n")
+            filtergroups = dict()
+            for site in publication_sites:
+                group = site['filter_group']
+                filter_val = site['filter_val']
+                f_name = site['file_name']
+                if not site['filter_group'] in filtergroups:
+                    filtergroups[site['filter_group']] = []
+                filtergroups[group].append((filter_val, f_name))
 
-            f.write("Filter by author:&nbsp; [all]({{< ref \"publications\" >}})\n")
-            for k, v, file_name in author_sites:
-                if 'author' in k:
-                    f.write(" &nbsp; ■ &nbsp;\n[" + v + "]({{< ref \"" + file_name +"\" >}})\n")
-            f.write("</br>\n")
-
-            f.write("Filter by topic:&nbsp; [all]({{< ref \"publications\" >}})\n")
-            for k, v, file_name in author_sites:
-                if 'keywords' in k:
-                    f.write(" &nbsp; ■ &nbsp;\n[" + v + "]({{< ref \"" + file_name + "\" >}})\n")
-            f.write("\n")
+            for k in filtergroups:
+                f.write("Filter by " + k + ":&nbsp; [all]({{< ref \"publications\" >}})\n")
+                for val, f_name in filtergroups[k]:
+                    f.write(" &nbsp; ■ &nbsp;\n[" + val + "]({{< ref \"" + f_name + "\" >}})\n")
+                f.write("</br>\n")
 
     def append_bib_entries(self, f_out, filter):
+        self.all_years.sort(reverse=True)
         with open(f_out, "a") as f:
             i = self.count_filtered_refs(filter) # num of ref that fulfill the filter
             for y in self.all_years:
@@ -367,20 +370,20 @@ if __name__ == '__main__':
     #
     # write publication sites
     #
-    pub_sites = [('author[or]editor', 'Daniel Höller', 'publicationsHoeller.md'),
-                 ('author[or]editor', 'Marcel Schubert', 'publicationsSchubert.md'),
-                 ('author[or]editor', 'Jonas Kück', 'publicationsKrueck.md'),
-                 ('author[or]editor', 'Magnus Cunow', 'publicationsCunow.md'),
-                 ('keywords', 'model', 'publicationsCunow.md'),
-                 ('keywords', 'solve', 'publicationsSolve.md'),
-                 ('keywords', 'trust', 'publicationsTrust.md'),
-                 ('keywords', 'othertopic', 'publicationsOther.md')]
+    pub_sites = [{'filter_group': 'author', 'filter_val': 'Daniel Höller', 'bib_key': 'author[or]editor', 'bib_val': 'Daniel Höller', 'file_name': 'publicationsHoeller.md'},
+                 {'filter_group': 'author', 'filter_val': 'Marcel Schubert', 'bib_key': 'author[or]editor', 'bib_val': 'Marcel Schubert', 'file_name': 'publicationsSchubert.md'},
+                 {'filter_group': 'author', 'filter_val': 'Jonas Kück', 'bib_key': 'author[or]editor', 'bib_val': 'Jonas Kück', 'file_name': 'publicationsKrueck.md'},
+                 {'filter_group': 'author', 'filter_val': 'Magnus Cunow', 'bib_key': 'author[or]editor', 'bib_val': 'Magnus Cunow', 'file_name': 'publicationsCunow.md'},
+                 {'filter_group': 'topic', 'filter_val': 'model', 'bib_key': 'keywords', 'bib_val': 'model', 'file_name': 'publicationsModel.md'},
+                 {'filter_group': 'topic', 'filter_val': 'solve', 'bib_key': 'keywords', 'bib_val': 'solve', 'file_name': 'publicationsSolve.md'},
+                 {'filter_group': 'topic', 'filter_val': 'trust', 'bib_key': 'keywords', 'bib_val': 'trust', 'file_name': 'publicationsTrust.md'},
+                 {'filter_group': 'topic', 'filter_val': 'other topics', 'bib_key': 'keywords', 'bib_val': 'othertopic', 'file_name': 'publicationsOther.md'}]
 
-    pub.write_pub_site(os.path.join(base_path, "content", "publications.md"), filter=dict(), author_sites=pub_sites)
-    for key, val, f_name in pub_sites:
-        filter = {key: val}
-        abs_f_name = os.path.join(base_path, "content", f_name)
-        pub.write_pub_site(abs_f_name, filter, author_sites=pub_sites)
+    pub.write_pub_site(os.path.join(base_path, "content", "publications.md"), filter=dict(), publication_sites=pub_sites)
+    for site in pub_sites:
+        filter = {site['bib_key']: site['bib_val']}
+        abs_f_name = os.path.join(base_path, "content", site['file_name'])
+        pub.write_pub_site(abs_f_name, filter, publication_sites=pub_sites)
 
     pub.write_bibtex_files(os.path.join(base_path, "static/bibtex"))
     #
