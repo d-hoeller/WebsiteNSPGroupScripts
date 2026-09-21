@@ -71,11 +71,18 @@ class web_site_publications:
             f.write("<style>\ntable, th, td {\nborder: 0px;\npadding-top: 5px;\npadding-bottom: 5px;\npadding-left: 5px;\n"+
                     "padding-right: 5px;\n}\n</style>\n\n")
 
-            f.write("<div style=\"text-align: center;\">\n  <img src=\"/images/venues.png\" alt=\"publication venues\" style=\"width:50%;\">\n</div>\n\n")
+            f.write("<div style=\"text-align: center;\">\n  <img src=\"/images/venues.png\" alt=\"publication venues\" style=\"width:50%;\">\n</div></br>\n\n")
 
             f.write("Filter by author:&nbsp; [all]({{< ref \"publications\" >}})\n")
-            for author_name, file_name in author_sites:
-                    f.write(" &nbsp; ■ &nbsp;\n[" + author_name + "]({{< ref \"" + file_name +"\" >}})\n")
+            for k, v, file_name in author_sites:
+                if 'author' in k:
+                    f.write(" &nbsp; ■ &nbsp;\n[" + v + "]({{< ref \"" + file_name +"\" >}})\n")
+            f.write("</br>\n")
+
+            f.write("Filter by topic:&nbsp; [all]({{< ref \"publications\" >}})\n")
+            for k, v, file_name in author_sites:
+                if 'keywords' in k:
+                    f.write(" &nbsp; ■ &nbsp;\n[" + v + "]({{< ref \"" + file_name + "\" >}})\n")
             f.write("\n")
 
     def append_bib_entries(self, f_out, filter):
@@ -360,16 +367,20 @@ if __name__ == '__main__':
     #
     # write publication sites
     #
-    author_pub_sites = [('Daniel Höller', 'publicationsHoeller.md'),
-                        ('Marcel Schubert', 'publicationsSchubert.md'),
-                        ('Jonas Kück', 'publicationsKrueck.md'),
-                        ('Magnus Cunow', 'publicationsCunow.md')]
+    pub_sites = [('author[or]editor', 'Daniel Höller', 'publicationsHoeller.md'),
+                 ('author[or]editor', 'Marcel Schubert', 'publicationsSchubert.md'),
+                 ('author[or]editor', 'Jonas Kück', 'publicationsKrueck.md'),
+                 ('author[or]editor', 'Magnus Cunow', 'publicationsCunow.md'),
+                 ('keywords', 'model', 'publicationsCunow.md'),
+                 ('keywords', 'solve', 'publicationsSolve.md'),
+                 ('keywords', 'trust', 'publicationsTrust.md'),
+                 ('keywords', 'othertopic', 'publicationsOther.md')]
 
-    pub.write_pub_site(os.path.join(base_path, "content", "publications.md"), filter=dict(), author_sites=author_pub_sites)
-    for author, f_name in author_pub_sites:
-        filter = {'author[or]editor': author}
+    pub.write_pub_site(os.path.join(base_path, "content", "publications.md"), filter=dict(), author_sites=pub_sites)
+    for key, val, f_name in pub_sites:
+        filter = {key: val}
         abs_f_name = os.path.join(base_path, "content", f_name)
-        pub.write_pub_site(abs_f_name, filter, author_sites=author_pub_sites)
+        pub.write_pub_site(abs_f_name, filter, author_sites=pub_sites)
 
     pub.write_bibtex_files(os.path.join(base_path, "static/bibtex"))
     #
